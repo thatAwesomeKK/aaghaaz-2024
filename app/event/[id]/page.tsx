@@ -9,7 +9,7 @@ type PageProps = {
 };
 
 async function Event({ params: { id } }: PageProps) {
-    const event: EventBody = await fetch(`http://localhost:3000/api/event/${id}`, { next: { revalidate: 60 } }).then(res => res.json())
+    const event: EventBody = await fetch(`http://localhost:3000/api/event/${id}`).then(res => res.json())
     return (
         <div className='flex bg-[#555] overflow-y-hidden h-screen'>
             <div className='flex-1 ml-12 pb-12 scrollbar-hide overflow-y-scroll'>
