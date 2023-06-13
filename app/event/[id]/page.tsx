@@ -5,12 +5,12 @@ import React from 'react'
 
 type PageProps = {
     params: {
-        id: number;
+        id: string;
     };
 };
 
 function Event({ params: { id } }: PageProps) {
-    const event = data.find((obj) => obj.eventId === id);
+    const event = data.find((obj) => obj.eventId === parseInt(id));
     return (
         <div className='flex bg-[#555] overflow-y-hidden h-screen'>
             <div className='flex-1 ml-12 pb-12 scrollbar-hide overflow-y-scroll'>
