@@ -27,14 +27,14 @@ async function Event({ params: { id } }: PageProps) {
                 <div className='mt-10'>
                     <p className='font-bold text-2xl text-[#de7474]'>Rules & Regulations: </p>
                         {event.rules.map((rule, index) => (
-                           <p className='ml-4 my-2 font-semibold text-lg text-white'>-{rule}</p> 
+                           <p key={index} className='ml-4 my-2 font-semibold text-lg text-white'>-{rule}</p> 
                         ))}
                 </div>
                 <div>
                     <p className='font-bold text-2xl text-[#de7474] mt-10'>Event Coordinators: </p>
                     <div className='flex flex-col space-y-2 mt-2 ml-4'>
                         {event.contact.s_coord.map((student, k) => (
-                            <p className='text-white font-medium text-lg'>{k + 1}. {student.name} - <span className='text-gray-300'>{student.number}</span></p>
+                            <p key={k} className='text-white font-medium text-lg'>{k + 1}. {student.name} - <span className='text-gray-300'>{student.number}</span></p>
                         ))}
                     </div>
                 </div>
