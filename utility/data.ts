@@ -290,7 +290,7 @@ export const data: EventBody[] = [
     venue: " Block C, IMSEC",
     date: `${date}`,
     superr: "th",
-    img: "https://res.cloudinary.com/storageforweb/image/upload/v1686762375/Aaghaaz/posters/Web-A-Thon_yjf5e3.jpg",
+    img: "https://res.cloudinary.com/storageforweb/image/upload/v1686719361/Aaghaaz/blind_coding_py8xjt.png",
     description:
       "It is coding contest, in which participant will write code of the given proble, without having code visible.  Monitor will be in off mode. There will be three rounds of 15 minutes each.  Participant can write the code in either C/C++/JAVA. Two awards will be given. Participants must adhere to the timelines. Incomplete entries or entries that do not comply with the above specifications will be automatically disqualified. Duration of the event will  2hours. Students from any UG/PG Course can participate.",
     rLink: "https://forms.gle/FMUs3hwfyzMS7nhw7",
