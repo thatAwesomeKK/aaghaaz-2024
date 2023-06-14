@@ -247,7 +247,7 @@ export const data = [
     superr: "th",
     img: "https://res.cloudinary.com/storageforweb/image/upload/v1686719042/Aaghaaz/website_mx0moj.jpg",
     description:
-      "It a web-design contest, in which team of two members will design web0page on the theme given on spot. Three hyperlink should be active to next page. ",
+      "It a Web-Design Contest, in which team of two members will design a website on the theme given on the spot. Three hyperlink should be active. Students from any UG/PG Course can participate. ",
     rLink: "https://forms.gle/FMUs3hwfyzMS7nhw7",
     contact: {
       s_coord: [
@@ -286,11 +286,10 @@ export const data = [
     eventId: 8,
     venue: " Block C, IMSEC",
     date: `${date}`,
-    cashPrize: ["5000", "3000"],
     superr: "th",
     img: "https://res.cloudinary.com/storageforweb/image/upload/v1686719361/Aaghaaz/blind_coding_py8xjt.png",
     description:
-      "It is coding contest, in which participant will write code of the given proble, without having code visible.  Monitor will be in off mode. There will be three rounds of 15 minutes each.  Participant can write the code in either C/C++/JAVA. Two awards will be given. Participants must adhere to the timelines. Incomplete entries or entries that do not comply with the above specifications will be automatically disqualified. Duration of the event will  2hours. Students from BTech, MCA, BCA can paperticipate.",
+      "It is coding contest, in which participant will write code of the given proble, without having code visible.  Monitor will be in off mode. There will be three rounds of 15 minutes each.  Participant can write the code in either C/C++/JAVA. Two awards will be given. Participants must adhere to the timelines. Incomplete entries or entries that do not comply with the above specifications will be automatically disqualified. Duration of the event will  2hours. Students from any UG/PG Course can participate.",
     rLink: "https://forms.gle/FMUs3hwfyzMS7nhw7",
     contact: {
       s_coord: [
@@ -303,7 +302,7 @@ export const data = [
           number: 9205187096,
         },
         {
-          name: "Pankaj Kushwaha",
+          name: "Pankaj Kushwah",
           number: 7253046539,
         },
         {
@@ -336,10 +335,11 @@ export const data = [
     eventId: 9,
     venue: " Block C, IMSEC",
     date: `${date}`,
+	cashPrize: ["5000", "3000"],
     superr: "th",
     img: "https://res.cloudinary.com/storageforweb/image/upload/v1686665653/Aaghaaz/movie_nqmlns.gif",
     description:
-      "Research paper presentation will be held on recent IT topics. Team of two members  can present their views and ideas on their topic through ppt presentation. Duration of each presentation wil be maxiamum 15 minutes including Q/A sessions. Two awards will be given. Participants must adhere to the timelines. Incomplete entries or entries that do not comply with the above specifications will be automatically disqualified. Duration of the event will  2hours. Students from BTech, MCA, BCA can paperticipate",
+      "Research paper presentation will be held on recent IT topics. Team of two members  can present their views and ideas on their topic through ppt presentation. Duration of each presentation wil be maxiamum 15 minutes including Q/A sessions. Two awards will be given. Participants must adhere to the timelines. Incomplete entries or entries that do not comply with the above specifications will be automatically disqualified. Duration of the event will  2hours. Students from any UG/PG Course can participate",
     rLink: "https://forms.gle/FMUs3hwfyzMS7nhw7",
     contact: {
       s_coord: [
@@ -378,7 +378,7 @@ export const data = [
     superr: "th",
     img: "https://res.cloudinary.com/storageforweb/image/upload/v1686720077/Aaghaaz/bgmi_jsmnhz.webp",
     description:
-      "Students will play BGMI. It may on group or solo/duo. Students  must carry mobile phones with games  installed  their mobile phone. Mobile data is to be used for internet connection.  Duration of this event will be 2 hours . Two awards will be given. Participants must adhere to the timelines. Incomplete entries or entries that do not comply with the above specifications will be automatically disqualified. Duration of the event will  2hours. Students from BTech, MCA, BCA can paperticipate.",
+      "Students will play BGMI. It may on group or Solo. Students  must carry mobile phones with games  installed  their mobile phone. Mobile data is to be used for internet connection.  Duration of this event will be 2 hours . Two awards will be given. Participants must adhere to the timelines. Incomplete entries or entries that do not comply with the above specifications will be automatically disqualified. Duration of the event will  2hours. Students from UG/PG Courses.",
     rLink: "https://forms.gle/FMUs3hwfyzMS7nhw7",
     contact: {
       s_coord: [
