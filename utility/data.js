@@ -247,7 +247,7 @@ export const data = [
     superr: "th",
     img: "https://res.cloudinary.com/storageforweb/image/upload/v1686719042/Aaghaaz/website_mx0moj.jpg",
     description:
-      "It a Web-Design Contest, in which team of two members will design a website on the theme given on the spot. Three hyperlink should be active. Students from any UG/PG Course can participate. ",
+      "It is a Web-Design Contest, in which team of two members will design a website on the theme given on the spot. Three hyperlink should be active. Students from any UG/PG Course can participate. ",
     rLink: "https://forms.gle/FMUs3hwfyzMS7nhw7",
     contact: {
       s_coord: [
@@ -391,8 +391,8 @@ export const data = [
           number: 8630042307,
         },
         {
-          name: "Siddharth",
-          number: 9627235617,
+          name: "Siddharth Poon",
+          number: 8258066998,
         },
         {
           name: "Kishan Gautam",
