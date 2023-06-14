@@ -12,7 +12,7 @@ function ContactModal({ contact }: Props) {
                 <div>
                     <p className='text-base font-bold'>Student Coordinator:</p>
                     {contact.s_coord.map((s, i) => (
-                        <div className='flex gap-2 items-center whitespace-nowrap'>
+                        <div key={i} className='flex gap-2 items-center whitespace-nowrap'>
                             <p className='text-sm font-medium'>{s.name}</p>
                             <p>-</p>
                             <p className='text-sm'>{s.number}</p>
@@ -22,7 +22,7 @@ function ContactModal({ contact }: Props) {
                 <div>
                     <p className='text-base font-bold'>Teacher Coordinator:</p>
                     {contact.t_coord.map((t, i) => (
-                        <p className='text-sm font-medium'>{t}</p>
+                        <p key={i} className='text-sm font-medium'>{t}</p>
                     ))}
                 </div>
             </div>
