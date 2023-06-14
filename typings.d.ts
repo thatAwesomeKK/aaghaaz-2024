@@ -3,6 +3,7 @@ export type EventBody = {
   eventId: number;
   venue: string;
   date: string;
+  cashPrize?: string[];
   superr: string;
   img: string;
   description: string;
