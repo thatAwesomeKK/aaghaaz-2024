@@ -1,4 +1,3 @@
-import { EventBody } from '@/typings';
 import { data } from '@/utility/data';
 import Image from 'next/image';
 import React from 'react'

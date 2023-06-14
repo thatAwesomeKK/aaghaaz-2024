@@ -1,5 +1,7 @@
+import { EventBody } from "@/typings";
+
 const date = "22nd June";
-export const data = [
+export const data: EventBody[] = [
   {
     eventName: "ANVESHAN- The Corporate Quiz",
     eventId: 1,
@@ -30,7 +32,7 @@ export const data = [
     time: "12:30 PM",
     poster:
       "https://res.cloudinary.com/storageforweb/image/upload/v1686665254/Aaghaaz/posters/anveshan_yqdoqi.png",
-    rules: [],
+    rules: ["1 Participant", "Hey There!"],
   },
   {
     eventName: "100 Ka Dam",
@@ -321,7 +323,7 @@ export const data = [
       "Only Problem Statement will be Provided.",
       "Each Participant has to type the code for the given problem with MONITOR SWITCHED OFF.",
       "Completed Code would be given higher preference.",
-      "2nd Prize will be givent to least number of errors.",,
+      "2nd Prize will be givent to least number of errors.",
     ],
   },
   {
