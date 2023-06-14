@@ -245,7 +245,7 @@ export const data: EventBody[] = [
     eventId: 7,
     venue: " Block C, IMSEC",
     date: `${date}`,
-    cashPrize: ["5000", "3000"],
+    cashPrize: ["₹5000/-", "₹3000/-"],
     superr: "th",
     img: "https://res.cloudinary.com/storageforweb/image/upload/v1686719042/Aaghaaz/website_mx0moj.jpg",
     description:
@@ -331,7 +331,7 @@ export const data: EventBody[] = [
     eventId: 9,
     venue: " Block C, IMSEC",
     date: `${date}`,
-	cashPrize: ["5000", "3000"],
+	cashPrize: ["₹5000/-", "₹3000/-"],
     superr: "th",
     img: "https://res.cloudinary.com/storageforweb/image/upload/v1686733746/Aaghaaz/images_ziyykb.jpg",
     description:
