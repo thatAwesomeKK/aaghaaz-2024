@@ -336,7 +336,6 @@ export const data = [
     eventId: 9,
     venue: " Block C, IMSEC",
     date: `${date}`,
-    cashPrize: [],
     superr: "th",
     img: "https://res.cloudinary.com/storageforweb/image/upload/v1686665653/Aaghaaz/movie_nqmlns.gif",
     description:
@@ -376,7 +375,6 @@ export const data = [
     eventId: 10,
     venue: " Block C, IMSEC",
     date: `${date}`,
-    cashPrize: [],
     superr: "th",
     img: "https://res.cloudinary.com/storageforweb/image/upload/v1686720077/Aaghaaz/bgmi_jsmnhz.webp",
     description:

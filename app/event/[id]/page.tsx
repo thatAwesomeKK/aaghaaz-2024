@@ -25,7 +25,7 @@ async function Event({ params: { id } }: PageProps) {
                     <p className='font-bold text-2xl text-[#de7474]'>Description: </p>
                     <p className='font-semibold text-lg text-white ml-4 mr-2 mt-2'>{event?.description}</p>
                 </div>
-                {event?.cashPrize![0] && <div className='mt-10'>
+                {event?.cashPrize && <div className='mt-10'>
                     <p className='font-bold text-2xl text-[#de7474]'>Cash prizes along with medals: </p>
                     <p className='ml-4 my-2 font-semibold text-lg text-gray-200'><span className='font-bold'>1st Prize : </span>{event?.cashPrize![0]}</p>
                     <p className='ml-4 my-2 font-semibold text-lg text-gray-200'><span className='font-bold'>2nd Prize : </span>{event?.cashPrize![1]}</p>
