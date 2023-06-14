@@ -247,7 +247,7 @@ export const data = [
     superr: "th",
     img: "https://res.cloudinary.com/storageforweb/image/upload/v1686719042/Aaghaaz/website_mx0moj.jpg",
     description:
-      "Welcome to the exciting Web Design Contest, where teams of two members will showcase their creativity and skills by designing a dynamic webpage based on a theme revealed on the spot. This competition aims to test your ability to create an engaging and visually appealing website while incorporating functional elements.The theme for the contest will be announced at the beginning of the competition. It could be anything from a specific industry, a social cause, a fictional concept, or even a real-world event. Prepare yourself to adapt quickly and bring your unique perspective to the given theme. Students from any UG/PG Course can participate. ",
+      "Welcome to the exciting Web Design Contest, it can be participated in individual or a team of 2, participants will showcase their creativity and skills by designing a dynamic webpage based on a theme revealed on the spot. This competition aims to test your ability to create an engaging and visually appealing website while incorporating functional elements.The theme for the contest will be announced at the beginning of the competition. It could be anything from a specific industry, a social cause, a fictional concept, or even a real-world event. Prepare yourself to adapt quickly and bring your unique perspective to the given theme. Students from any UG/PG Course can participate. ",
     rLink: "https://forms.gle/FMUs3hwfyzMS7nhw7",
     contact: {
       s_coord: [
