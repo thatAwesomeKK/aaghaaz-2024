@@ -1,4 +1,4 @@
-const date = "22nd May";
+const date = "22nd June";
 export const data = [
   {
     eventName: "ANVESHAN- The Corporate Quiz",
