@@ -9,7 +9,7 @@ type PageProps = {
     };
 };
 
-function Event({ params: { id } }: PageProps) {
+async function Event({ params: { id } }: PageProps) {
     const event = data.find((obj) => obj.eventId === parseInt(id));
     return (
         <div className='flex bg-[#555] overflow-y-hidden h-screen'>
@@ -27,9 +27,9 @@ function Event({ params: { id } }: PageProps) {
                 </div>
                 <div className='mt-10'>
                     <p className='font-bold text-2xl text-[#de7474]'>Rules & Regulations: </p>
-                        {event!.rules.map((rule, index) => (
-                           <p key={index} className='ml-4 my-2 font-semibold text-lg text-white'>-{rule}</p> 
-                        ))}
+                    {event!.rules.map((rule, index) => (
+                        <p key={index} className='ml-4 my-2 font-semibold text-lg text-white'>-{rule}</p>
+                    ))}
                 </div>
                 <div>
                     <p className='font-bold text-2xl text-[#de7474] mt-10'>Event Coordinators: </p>

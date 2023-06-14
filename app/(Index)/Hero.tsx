@@ -9,7 +9,7 @@ function Hero() {
                 <h1 className='absolute text-7xl font-bold left-1/2 transform -translate-x-[48%] text-red-400 tracking-wide'>AAGHAAZ</h1>
             </div>
             <div className="text-center">
-                <p className='font-semibold text-3xl text-white'>2022</p>
+                <p className='font-semibold text-3xl text-white'>2023</p>
                 <div className="flex items-center justify-center h-16 w-[100vw] relative">
                     <hr className="absolute w-[30vw] bg-gray-200" />
                     <p className="absolute px-3 text-3xl font-bold bg-slate-500 text-white">A MANAGEMENT FEST</p>

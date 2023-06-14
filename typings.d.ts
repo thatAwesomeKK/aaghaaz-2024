@@ -19,7 +19,10 @@ export type EventBody = {
   rules: string[];
 };
 
-type StudentCoordinator = {
-  name: string;
-  number: number;
+type Coordinator = {
+  s_coord: {
+    name: string;
+    number: number;
+  }[];
+  t_coord: string[];
 };
