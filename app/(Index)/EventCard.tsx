@@ -14,14 +14,14 @@ function EventCard({ event }: Props) {
       <div className='bg-gray-200 flex justify-between items-center px-5 py-4 rounded-lg'>
         <div className='flex flex-col'>
           <p className='font-bold text-xl text-gray-500'>{event.date}</p>
-          <h3 className='font-extrabold text-xl'>{event.eventName}</h3>
+          <h3 className='font-extrabold text-xl mr-2 whitespace-pre-wrap'>{event.eventName}</h3>
           <div className='flex items-center space-x-2'>
             <div className="h-0 w-0 border-t-[10px] border-l-[17px] border-b-[10px] 
 border-solid border-t-transparent border-b-transparent border-l-[#d16a6a]"></div>
             <p className='text-lg font-semibold'>{event.venue}</p>
           </div>
         </div>
-        <div className='relative h-28 w-28 rounded-full overflow-hidden bg-black'>
+        <div className='relative h-28 w-28 rounded-full overflow-hidden bg-black px-14'>
           <Image className='object-cover' fill src={event.img} alt='Logo' />
         </div>
       </div>
