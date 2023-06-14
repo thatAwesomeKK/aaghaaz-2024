@@ -13,7 +13,7 @@ async function Event({ params: { id } }: PageProps) {
     const event = data.find((obj) => obj.eventId === parseInt(id));
     return (
         <div className='flex bg-[#555] overflow-y-hidden h-screen'>
-            <div className='flex-1 ml-12 pb-12 scrollbar-hide overflow-y-scroll'>
+            <div className='flex-1 mx-5 md:ml-12 pb-12 scrollbar-hide overflow-y-scroll'>
                 <p className='font-bold text-2xl text-[#f5a7a7a0] mb-20 mt-14 underline'>Know More</p>
                 <div className='relative h-36 mb-10'>
                     <h3 className='absolute font-extrabold text-5xl sm:text-6xl md:text-7xl text-red-100 z-10'>{event?.eventName}</h3>
