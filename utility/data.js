@@ -1,9 +1,10 @@
+const date = "22nd May"
 export const data = [
 	{
 		eventName: "ANVESHAN- The Corporate Quiz",
 		eventId: 1,
 		venue: " Block C, IMSEC",
-		date: "May 13",
+		date: `${date}`,
 		superr: "th",
 		img: "https://res.cloudinary.com/storageforweb/image/upload/v1686665155/Aaghaaz/quiz_kxeawj.jpg",
 		description:"One team will comprise of not more than two participants, Per college, not more than 3 teams will be allowed, First round to be a screening round (written), Out of the screening round, top 6 teams quality to play two league rounds A and B, From each league round A and B, top two teams to quality for semi final, Form the semi final, team with the lowest score will be eliminated, Three teams play final, Winners are declared as 1st and 2nd, In case of tie, a tie breaker question will be asked.",
@@ -33,7 +34,7 @@ export const data = [
 		eventName: "100 Ka Dam",
 		eventId: 2,
 		venue: " Block C, IMSEC",
-		date: "May 13",
+		date: `${date}`,
 		superr: "th",
 		img: "https://res.cloudinary.com/storageforweb/image/upload/v1686665292/Aaghaaz/invest_m4ewn0.gif",
 		description:
@@ -71,7 +72,7 @@ export const data = [
 		eventName: "Ad Zap - The Ad Mad Show",
 		eventId: 3,
 		venue: "Block C, IMSEC",
-		date: "May 13",
+		date: `${date}`,
 		superr: "th",
 		img: "https://res.cloudinary.com/storageforweb/image/upload/v1686665546/Aaghaaz/ad_lgjcf0.jpg",
 		description:
@@ -116,7 +117,7 @@ export const data = [
 		eventName: "Jugaad Management",
 		eventId: 4,
 		venue: " Block C, IMSEC",
-		date: "May 13",
+		date: `${date}`,
 		superr: "th",
 		img: "https://res.cloudinary.com/storageforweb/image/upload/v1686665568/Aaghaaz/garbage-recycle_eydnki.svg",
 		description:
@@ -151,7 +152,7 @@ export const data = [
 		eventName: "Business Plan",
 		eventId: 5,
 		venue: " Block C, IMSEC",
-		date: "May 13",
+		date: `${date}`,
 		superr: "th",
 		img: "https://res.cloudinary.com/storageforweb/image/upload/v1686665605/Aaghaaz/businessplan_dvand9.gif",
 
@@ -188,7 +189,7 @@ export const data = [
 		eventName: "Movie Making",
 		eventId: 6,
 		venue: " Block C, IMSEC",
-		date: "May 13",
+		date: `${date}`,
 		superr: "th",
 		img: "https://res.cloudinary.com/storageforweb/image/upload/v1686665653/Aaghaaz/movie_nqmlns.gif",
 		description:
@@ -236,7 +237,7 @@ export const data = [
 		eventName: "Web-A-Thon",
 		eventId: 7,
 		venue: " Block C, IMSEC",
-		date: "May 13",
+		date: `${date}`,
 		superr: "th",
 		img: "https://res.cloudinary.com/storageforweb/image/upload/v1686719042/Aaghaaz/website_mx0moj.jpg",
 		description:
@@ -250,15 +251,15 @@ export const data = [
 				},
 				{
 					name: "Devanshu Kumar",
-					number: 91613,
+					number: 7042613850,
 				},
 				{
 					name: "Ankit Mishra",
-					number: 9627235617,
+					number: 9919063751,
 				},
 				{
 					name: "Harsh Saxena",
-					number: 8840621016,
+					number: 9368218158,
 				},
 			],
 			t_coord: ["Mr. Ashish Pandey"],
@@ -284,7 +285,7 @@ export const data = [
 		eventName: "Blind Coding",
 		eventId: 8,
 		venue: " Block C, IMSEC",
-		date: "May 13",
+		date: `${date}`,
 		superr: "th",
 		img: "https://res.cloudinary.com/storageforweb/image/upload/v1686719361/Aaghaaz/blind_coding_py8xjt.png",
 		description:
@@ -293,8 +294,8 @@ export const data = [
 		contact: {
 			s_coord: [
 				{
-					name: "Awadesh, Deepanshu",
-					number: 9205187096,
+					name: "Awadesh",
+					number: 8287188936,
 				},
 				{
 					name: "Deepanshu",
@@ -302,11 +303,11 @@ export const data = [
 				},
 				{
 					name: "Pankaj Kushwaha",
-					number: 91613,
+					number: 7253046539,
 				},
 				{
 					name: "Agam Varshney",
-					number: 9627235617,
+					number: 9528404019,
 				},
 			],
 			t_coord: ["Mr. Varun Chaudhary "],
@@ -332,7 +333,7 @@ export const data = [
 		eventName: "Paper Presentation contest on Recent IT Topic",
 		eventId: 9,
 		venue: " Block C, IMSEC",
-		date: "May 13",
+		date: `${date}`,
 		superr: "th",
 		img: "https://res.cloudinary.com/storageforweb/image/upload/v1686665653/Aaghaaz/movie_nqmlns.gif",
 		description:
@@ -342,15 +343,15 @@ export const data = [
 			s_coord: [
 				{
 					name: "Shivam Singh Rajput",
-					number: 9205187096,
+					number: 9140529089,
 				},
 				{
 					name: "Hem Pratap Rana",
-					number: 91613,
+					number: 7302677440,
 				},
 				{
 					name: "Simran",
-					number: 9627235617,
+					number: 9136171566,
 				},
 			],
 			t_coord: ["Mr. Varun Chaudhary "],
@@ -376,7 +377,7 @@ export const data = [
 		eventName: "E-Sports",
 		eventId: 10,
 		venue: " Block C, IMSEC",
-		date: "May 13",
+		date: `${date}`,
 		superr: "th",
 		img: "https://res.cloudinary.com/storageforweb/image/upload/v1686720077/Aaghaaz/bgmi_jsmnhz.webp",
 		description:
@@ -386,15 +387,19 @@ export const data = [
 			s_coord: [
 				{
 					name: "Vikalp",
-					number: 9205187096,
+					number: 9621408895,
 				},
 				{
 					name: "Shivam Patel",
-					number: 91613,
+					number: 8630042307,
 				},
 				{
 					name: "Siddharth",
 					number: 9627235617,
+				},
+				{
+					name: "Kishan Gautam",
+					number: 9891121524,
 				},
 			],
 			t_coord: ["Ashish Pandey"],

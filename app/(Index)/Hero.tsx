@@ -15,6 +15,7 @@ function Hero() {
                     <p className="absolute px-3 text-3xl font-bold bg-slate-500 text-white">A MANAGEMENT FEST</p>
                 </div>
                 <p className="-mt-4 text-lg font-bold text-white"> By Department of MCA & MBA</p>
+                <p className='text-white'>Register Here: </p>
             </div>
         </div>
     )

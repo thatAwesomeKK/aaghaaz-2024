@@ -4,7 +4,7 @@ import React from 'react'
 function Header() {
     return (
         <header className='w-screen bg-white flex justify-between'>
-            <div className='relative h-24 w-[32%]'>
+            <div className='relative h-24 w-72'>
                 <Image
                     src="https://res.cloudinary.com/personal-cloud-rohaanmd/image/upload/v1650731198/logo_d2gaks.jpg"
                     alt="Logo"
