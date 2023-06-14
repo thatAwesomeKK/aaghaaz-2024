@@ -8,7 +8,7 @@ type Props = {
 function ContactModal({ contact }: Props) {
     return (
         <>
-            <div className='absolute h-72 w-64 bg-gray-400 -top-72 -right-6 flex flex-col space-y-4 justify-evenly p-6 rounded-md'>
+            <div className='absolute shadow-lg h-72 w-64 bg-slate-200 -top-72 -right-6 flex flex-col space-y-4 justify-evenly p-6 rounded-md'>
                 <div>
                     <p className='text-base font-bold'>Student Coordinator:</p>
                     {contact.s_coord.map((s, i) => (
@@ -26,7 +26,7 @@ function ContactModal({ contact }: Props) {
                     ))}
                 </div>
             </div>
-            <div className="absolute top-0 right-1/2 w-0 h-0 border-l-[10px] border-l-transparent border-t-[20px] border-t-gray-400 border-r-[10px] border-r-transparent"></div>
+            <div className="absolute top-0 right-1/2 w-0 h-0 border-l-[10px] border-l-transparent border-t-[20px] border-t-slate-200 border-r-[10px] border-r-transparent"></div>
         </>
     )
 }
