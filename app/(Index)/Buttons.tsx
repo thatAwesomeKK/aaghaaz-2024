@@ -1,4 +1,5 @@
 'use client'
+
 import Link from 'next/link'
 import React, { useEffect, useRef, useState } from 'react'
 import ContactModal from './ContactModal'
@@ -15,6 +16,7 @@ function Buttons({ eventId, contact }: Props) {
 
     useEffect(() => {
       const checkIfClikedOutside = (e: any)=>{
+        // @ts-ignore
         if(isOpen && ref.current && !ref.current.contains(e.target)){
             setIsOpen(false)
         }
@@ -27,6 +29,7 @@ function Buttons({ eventId, contact }: Props) {
     
 
     return (
+      // @ts-ignore
         <div ref={ref} className='bg-gray-300 flex justify-evenly rounded-lg'>
             <button className='hover:bg-blue-400 flex-1 py-4'>Register Now</button>
             <Link href={`/event/${eventId}`} className='hover:bg-blue-400 flex-1 py-4 text-center'>Know More</Link>
