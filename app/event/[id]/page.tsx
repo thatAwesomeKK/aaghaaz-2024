@@ -1,5 +1,5 @@
 import { EventBody } from '@/typings';
-import { data } from '@/utility/data';
+// import { data } from '@/utility/data';
 import Image from 'next/image';
 import React from 'react'
 
@@ -16,7 +16,7 @@ async function Event({ params: { id } }: PageProps) {
     const event: EventBody = await fetch(`${host}/api/event/${id}`, { next: { revalidate: 60 } }).then(res => res.json())
     // const ex: EventBody = await fetch(`${host}/api/event`).then(res => res.json())
     // console.log(ex);
-    
+
 
     return (
         <div className='flex bg-[#555] overflow-y-hidden h-screen'>
@@ -59,11 +59,11 @@ async function Event({ params: { id } }: PageProps) {
     )
 }
 
-// export async function generateStaticParams(){
-//   const events: EventBody[] = await fetch(`${host}/api/event`).then(res => res.json())
-//   return events.map((event)=>({
-//     id: event.eventId.toString()
-//   }))
-//  }
+export async function generateStaticParams() {
+    const events: EventBody[] = await fetch(`${host}/api/event`).then(res => res.json())
+    return events.map((event) => ({
+        id: event.eventId.toString()
+    }))
+}
 
 export default Event
