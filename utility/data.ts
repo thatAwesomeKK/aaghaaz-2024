@@ -6,7 +6,7 @@ export const data: EventBody[] = [
   {
     eventName: "ANVESHAN- The Corporate Quiz",
     eventId: 1,
-    venue: " Block C, IMSEC",
+    venue: "Room No.103, Block C, IMSEC",
     date: `${date}`,
     superr: "th",
     img: "https://res.cloudinary.com/storageforweb/image/upload/v1686665155/Aaghaaz/quiz_kxeawj.jpg",
@@ -32,13 +32,13 @@ export const data: EventBody[] = [
     },
     time: "12:30 PM",
     poster:
-      "https://res.cloudinary.com/storageforweb/image/upload/v1686665254/Aaghaaz/posters/anveshan_yqdoqi.png",
-    rules: ["1 Participant", "Hey There!"],
+      "https://res.cloudinary.com/storageforweb/image/upload/v1686851735/Aaghaaz/posters/anveshan_20230615_223017_0001_kkwwpy.png",
+    rules: [],
   },
   {
     eventName: "100 Ka Dam",
     eventId: 2,
-    venue: " Block C, IMSEC",
+    venue: "Room No. 101, Block C, IMSEC",
     date: `${date}`,
     superr: "th",
     img: "https://res.cloudinary.com/storageforweb/image/upload/v1686665292/Aaghaaz/invest_m4ewn0.gif",
@@ -60,7 +60,7 @@ export const data: EventBody[] = [
     },
     time: `${time}`,
     poster:
-      "https://res.cloudinary.com/storageforweb/image/upload/v1686665321/Aaghaaz/posters/dam_dmwhkl.png",
+      "https://res.cloudinary.com/storageforweb/image/upload/v1686852082/Aaghaaz/posters/png_20230615_223646_0000_u6uot3.png",
     rules: [
       "Students are required to participate in teams, minimum 3 and maximum 4 members are allowed to participate.",
       "Every participant will be provided ₹100 at the starting of an event.",
@@ -77,12 +77,12 @@ export const data: EventBody[] = [
   {
     eventName: "Ad Zap - The Ad Mad Show",
     eventId: 3,
-    venue: "Block C, IMSEC",
+    venue: "Room No. 105, Block C, IMSEC",
     date: `${date}`,
     superr: "th",
     img: "https://res.cloudinary.com/storageforweb/image/upload/v1686665546/Aaghaaz/ad_lgjcf0.jpg",
     description:
-      "Participants will have to register as a team (Min 3 Max 4), Product will be provided on the spot for Ad making.   In the 1st round, the teams would make ad jingles and tag lines. (time limit -5 min). Based on the decision of jury, teams will qualify for the second round. In the second round the teams will make print ad. (time limit -20 min).   Based on the decision of jury, teams will qualify for the final round (time limit -5 min). In the third round the teams will make visual advertisements (acting on stage)- time limit 2 min. Ad should not be copied from television. Avoid controversial content. Bring out the creativity inside you and make an outstanding advertisement of your own. Be it hilarious or sensitive, be it just your creativity and ad sense. Ad -Mad show is an advertisement making competition for students to provide platform where they can showcase their creativity and talent for marketing any product or service. It comprise of creative and humorous ad presentation through acting, jingle/tagline, brand name etc. for the selected product or service.",
+      "Ad Zap is an exhilarating and cutting-edge event designed to bring together advertising professionals, marketers, entrepreneurs, and creative enthusiasts for an immersive experience in the world of advertising. This event aims to explore the latest trends, strategies, and innovations in the advertising industry while providing a platform for networking and collaboration.",
 
     rLink: "https://forms.gle/QmWAHnsTfDvHwqD56",
     contact: {
@@ -104,7 +104,7 @@ export const data: EventBody[] = [
     },
     time: `${time}`,
     poster:
-      "https://res.cloudinary.com/storageforweb/image/upload/v1686665778/Aaghaaz/posters/adzap_erywtz.png",
+      "https://res.cloudinary.com/storageforweb/image/upload/v1686851772/Aaghaaz/posters/adzap_20230615_214855_0004_fk3fs6.png",
     rules: [
       "It is a team event so students are required to participate in teams. Minimum 3 and maximum 5 members are allowed to participate.",
       "The presentation should contain brand name, brand logo, jingle/tagline for the selected product or service. Topics would be provided on the spot.",
@@ -121,7 +121,7 @@ export const data: EventBody[] = [
   {
     eventName: "Jugaad Management",
     eventId: 4,
-    venue: " Block C, IMSEC",
+    venue: "Room No. 102, Block C, IMSEC",
     date: `${date}`,
     superr: "th",
     img: "https://res.cloudinary.com/storageforweb/image/upload/v1686665568/Aaghaaz/garbage-recycle_eydnki.svg",
@@ -143,7 +143,7 @@ export const data: EventBody[] = [
     },
     time: `${time}`,
     poster:
-      "https://res.cloudinary.com/storageforweb/image/upload/v1686665797/Aaghaaz/posters/jugaad_pbeoua.png",
+      "https://res.cloudinary.com/storageforweb/image/upload/v1686851858/Aaghaaz/posters/jugaad_20230615_214855_0003_a3blhp.png",
     rules: [
       "Maximum 2-4 members in each team.",
       "Participants will be given 1 hour and 30 minutes to make the creative model and 2 minutes for explanation.",
@@ -157,7 +157,7 @@ export const data: EventBody[] = [
   {
     eventName: "Business Plan",
     eventId: 5,
-    venue: " Block C, IMSEC",
+    venue: "Auditorium, Block C, IMSEC",
     date: `${date}`,
     superr: "th",
     img: "https://res.cloudinary.com/storageforweb/image/upload/v1686665605/Aaghaaz/businessplan_dvand9.gif",
@@ -182,7 +182,7 @@ export const data: EventBody[] = [
     },
     time: `${time}`,
     poster:
-      "https://res.cloudinary.com/storageforweb/image/upload/v1686665841/Aaghaaz/posters/bp_m8ghvo.png",
+      "https://res.cloudinary.com/storageforweb/image/upload/v1686851809/Aaghaaz/posters/bp_20230615_214855_0005_ifzvom.png",
     rules: [
       "Any number of business plans from an institution may be allowed, provided that teams have no common members.",
       "Students can participate in teams / individually. Max. 3 members in a team are allowed to participate.",
@@ -195,7 +195,7 @@ export const data: EventBody[] = [
   {
     eventName: "Movie Making",
     eventId: 6,
-    venue: " Block C, IMSEC",
+    venue: "Auditorium, Block C, IMSEC",
     date: `${date}`,
     superr: "th",
     img: "https://res.cloudinary.com/storageforweb/image/upload/v1686665653/Aaghaaz/movie_nqmlns.gif",
@@ -225,7 +225,7 @@ export const data: EventBody[] = [
     },
     time: `${time}`,
     poster:
-      "https://res.cloudinary.com/storageforweb/image/upload/v1686665862/Aaghaaz/posters/movie_m9s7oo.png",
+      "https://res.cloudinary.com/storageforweb/image/upload/v1686851886/Aaghaaz/posters/movie_20230615_214855_0006_plyzkj.png",
     rules: [
       "Every team should comprises of 2-3 members each.",
       "Once the registration process will complete their would be no change and incomplete details or registration will automatically disqualified from the event participation.",
@@ -244,7 +244,7 @@ export const data: EventBody[] = [
   {
     eventName: "Web-A-Thon",
     eventId: 7,
-    venue: " Block C, IMSEC",
+    venue: "Auditorium, Block C, IMSEC",
     date: `${date}`,
     cashPrize: ["₹5000/-", "₹3000/-"],
     superr: "th",
@@ -275,7 +275,7 @@ export const data: EventBody[] = [
     },
     time: `${time}`,
     poster:
-      "https://res.cloudinary.com/storageforweb/image/upload/v1686763289/Aaghaaz/posters/web-a-thon_2_qhwy88.jpg",
+      "https://res.cloudinary.com/storageforweb/image/upload/v1686852150/Aaghaaz/posters/Web-A-Thon_grl9qb.png",
     rules: [
       "2 Hours will be given to finish the build",
       "Team of  1 or 2 members",
@@ -288,7 +288,7 @@ export const data: EventBody[] = [
   {
     eventName: "Blind Coding",
     eventId: 8,
-    venue: " Block C, IMSEC",
+    venue: "Auditorium, Block C, IMSEC",
     date: `${date}`,
     superr: "th",
     img: "https://res.cloudinary.com/storageforweb/image/upload/v1686719361/Aaghaaz/blind_coding_py8xjt.png",
@@ -318,7 +318,7 @@ export const data: EventBody[] = [
     },
     time: `${time}`,
     poster:
-      "https://res.cloudinary.com/storageforweb/image/upload/v1686763289/Aaghaaz/posters/blind_coding_yiiv9u.jpg",
+      "https://res.cloudinary.com/storageforweb/image/upload/v1686852152/Aaghaaz/posters/Blind_Coding_jq5bll.png",
     rules: [
       "Three Rounds of 15min Each.",
       "Only Problem Statement will be Provided.",
@@ -330,7 +330,7 @@ export const data: EventBody[] = [
   {
     eventName: "Paper Presentation",
     eventId: 9,
-    venue: " Block C, IMSEC",
+    venue: "Auditorium, Block C, IMSEC",
     date: `${date}`,
 	cashPrize: ["₹5000/-", "₹3000/-"],
     superr: "th",
@@ -357,7 +357,7 @@ export const data: EventBody[] = [
     },
     time: `${time}`,
     poster:
-      "https://res.cloudinary.com/storageforweb/image/upload/v1686816680/Aaghaaz/posters/resPaperPresentation_bp8xfs.png",
+      "https://res.cloudinary.com/storageforweb/image/upload/v1686852152/Aaghaaz/posters/Paper_Presentation_uaqmhv.png",
     rules: [
       "Team of 1 or 2 members.",
       "Duration will be of 10 minutes including Q/A session.",
@@ -370,7 +370,7 @@ export const data: EventBody[] = [
   {
     eventName: "BGMI",
     eventId: 10,
-    venue: " Block C, IMSEC",
+    venue: "Auditorium, Block C, IMSEC",
     date: `${date}`,
     superr: "th",
     img: "https://res.cloudinary.com/storageforweb/image/upload/v1686720077/Aaghaaz/bgmi_jsmnhz.webp",
@@ -400,7 +400,7 @@ export const data: EventBody[] = [
     },
     time: `${time}`,
     poster:
-      "https://res.cloudinary.com/storageforweb/image/upload/v1686816558/Aaghaaz/posters/rezBGMI_eqfb91.png",
+      "https://res.cloudinary.com/storageforweb/image/upload/v1686852152/Aaghaaz/posters/BGMI_kixol0.png",
     rules: [
       "You need to Paarticipate Solo",
       "The Game must be Pre-Installed on the Device",

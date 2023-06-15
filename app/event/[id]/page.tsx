@@ -2,6 +2,9 @@ import { EventBody } from '@/typings';
 // import { data } from '@/utility/data';
 import Image from 'next/image';
 import React from 'react'
+import { Handlee, Pacifico } from 'next/font/google'
+const handlee = Handlee({ subsets: ['latin'], weight: ["400"] })
+const pacifico = Pacifico({ subsets: ['latin'], weight: ["400"] })
 
 type PageProps = {
     params: {
@@ -26,28 +29,28 @@ async function Event({ params: { id } }: PageProps) {
                     <h3 className='absolute font-extrabold text-5xl sm:text-6xl md:text-7xl text-red-100 z-10'>{event?.eventName}</h3>
                     <h3 className='absolute left-2 font-extrabold text-5xl sm:text-6xl md:text-7xl text-[#b65e5e]'>{event?.eventName}</h3>
                 </div>
-                <p className='font-bold text-3xl text-[#de7474]'>Date & Time: <span className='font-medium text-lg text-white'>{event?.date} @ {event!.time}</span></p>
-                <p className='font-bold text-3xl text-[#de7474]'>Venue: <span className='font-medium text-lg text-white'>{event?.venue}</span></p>
+                <p className={`${handlee.className} font-medium text-xl text-white`}> <span className={`${pacifico.className} font-bold text-3xl text-[#de7474]`}>Date & Time: </span>{event?.date} @ {event!.time}</p>
+                <p className={`${pacifico.className} font-bold text-3xl text-[#de7474]`}>Venue: <span className={`${handlee.className} font-medium text-lg text-white`}>{event?.venue}</span></p>
                 <div className='mt-10'>
-                    <p className='font-bold text-2xl text-[#de7474]'>Description: </p>
-                    <p className='font-semibold text-lg text-white ml-2 lg:ml-4 mr-2 mt-2'>{event?.description}</p>
+                    <p className={`${pacifico.className} font-bold text-2xl text-[#de7474]`}>Description: </p>
+                    <p className={`${handlee.className} font-semibold text-xl text-white ml-2 lg:ml-4 mr-2 mt-2`}>{event?.description}</p>
                 </div>
                 {event?.cashPrize && <div className='mt-10'>
-                    <p className='font-bold text-2xl text-[#de7474]'>Cash prizes along with medals: </p>
-                    <p className='ml-4 my-2 font-semibold text-lg text-gray-200'><span className='font-bold'>1st Prize : </span>{event?.cashPrize![0]}</p>
-                    <p className='ml-4 my-2 font-semibold text-lg text-gray-200'><span className='font-bold'>2nd Prize : </span>{event?.cashPrize![1]}</p>
+                    <p className={`${pacifico.className} font-bold text-2xl text-[#de7474]`}>Cash prizes along with medals: </p>
+                    <p className={`${handlee.className} ml-4 my-2 font-semibold text-xl text-gray-200`}><span className='font-bold'>1st Prize : </span>{event?.cashPrize![0]}</p>
+                    <p className={`${handlee.className} ml-4 my-2 font-semibold text-xl text-gray-200`}><span className='font-bold'>2nd Prize : </span>{event?.cashPrize![1]}</p>
                 </div>}
                 <div className='mt-10'>
-                    <p className='font-bold text-2xl text-[#de7474]'>Rules & Regulations: </p>
+                    <p className={`${pacifico.className} font-bold text-2xl text-[#de7474]`}>Rules & Regulations: </p>
                     {event!.rules.map((rule, index) => (
-                        <p key={index} className='my-2 font-semibold text-lg text-white ml-2 lg:ml-4'>-{rule}</p>
+                        <p key={index} className={`${handlee.className} my-2 font-semibold text-xl text-white ml-2 lg:ml-4`}>-{rule}</p>
                     ))}
                 </div>
                 <div>
-                    <p className='font-bold text-2xl text-[#de7474] mt-10'>Event Coordinators: </p>
+                    <p className={`${pacifico.className} font-bold text-2xl text-[#de7474] mt-10`}>Event Coordinators: </p>
                     <div className='flex flex-col space-y-2 mt-2 ml-2 lg:ml-4'>
                         {event?.contact.s_coord.map((student, k) => (
-                            <p key={k} className='text-white font-medium text-lg'>{k + 1}. {student.name} - <span className='text-gray-300'>{student.number}</span></p>
+                            <p key={k} className={`${handlee.className} text-white font-medium text-xl`}>{k + 1}. {student.name} - <span className='text-gray-300'>{student.number}</span></p>
                         ))}
                     </div>
                 </div>
