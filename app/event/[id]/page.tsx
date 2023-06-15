@@ -1,3 +1,4 @@
+import { EventBody } from '@/typings';
 import { data } from '@/utility/data';
 import Image from 'next/image';
 import React from 'react'
@@ -9,7 +10,9 @@ type PageProps = {
 };
 
 async function Event({ params: { id } }: PageProps) {
-    const event = data.find((obj) => obj.eventId === parseInt(id));
+    // const event = data.find((obj) => obj.eventId === parseInt(id));
+    const event: EventBody = await fetch(`http://localhost:3000/api/event/${id}`, { next: { revalidate: 60 } }).then(res => res.json())
+      
     return (
         <div className='flex bg-[#555] overflow-y-hidden h-screen'>
             <div className='flex-1 mx-5 md:ml-12 pb-12 scrollbar-hide overflow-y-scroll'>
