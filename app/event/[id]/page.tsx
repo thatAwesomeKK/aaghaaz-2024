@@ -16,7 +16,7 @@ const host = process.env.NEXT_PUBLIC_HOST
 
 async function Event({ params: { id } }: PageProps) {
     // const event = data.find((obj) => obj.eventId === parseInt(id));
-    const event: EventBody = await fetch(`${host}/api/event/${id}`, { next: { revalidate: 60 } }).then(res => res.json())
+    const event: EventBody = await fetch(`${host}/api/event/${id}`).then(res => res.json())
     // const ex: EventBody = await fetch(`${host}/api/event`).then(res => res.json())
     // console.log(ex);
 
