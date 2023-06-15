@@ -1,6 +1,5 @@
 import { EventBody } from '@/typings'
 import Image from 'next/image';
-import Link from 'next/link';
 import React from 'react'
 import Buttons from './Buttons';
 
@@ -28,7 +27,10 @@ border-solid border-t-transparent border-b-transparent border-l-[#d16a6a]"></div
       <div className='px-5 py-4 h-48 rounded-lg'>
         <p className='line-clamp-6'>{event.description}</p>
       </div>
-      <Buttons eventId={event.eventId} contact={event.contact}/>
+      <div className='flex justify-center'>
+        <hr className='w-72 bg-slate-400' />
+      </div>
+      <Buttons eventId={event.eventId} contact={event.contact} />
     </div>
   )
 }

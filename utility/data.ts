@@ -383,7 +383,7 @@ export const data: EventBody[] = [
     superr: "th",
     img: "https://res.cloudinary.com/storageforweb/image/upload/v1686720077/Aaghaaz/bgmi_jsmnhz.webp",
     description:
-      "Students will play BGMI. It is a Solo event. Students  must carry mobile phones with games  installed  their mobile phone. Mobile data is to be used for internet connection. Duration of this event will be 2 hours . Two awards will be given. Participants must adhere to the timelines. Incomplete entries or entries that do not comply with the above specifications will be automatically disqualified. Duration of the event will  2hours. Students from UG/PG Courses.",
+      "The featured game is BGMI. It is a 4-man squad event. Students must carry their own mobile phones with their own mobile data for the internet connection. Duration of this Event will be for around 2 hours . Two awards will be given. Each team MUST have 4 members. Participants must report at the specified time. Incomplete entries or entries that do not comply with the above specifications will be automatically disqualified. Event is for UG/PG students only. Go get that Chicken Dinner!.",
     rLink: "https://forms.gle/FMUs3hwfyzMS7nhw7",
     contact: {
       s_coord: [
