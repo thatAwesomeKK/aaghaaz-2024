@@ -1,6 +1,7 @@
 import { EventBody } from "@/typings";
 
 const date = "22nd June";
+const time  = "9AM"
 export const data: EventBody[] = [
   {
     eventName: "ANVESHAN- The Corporate Quiz",
@@ -57,7 +58,7 @@ export const data: EventBody[] = [
       ],
       t_coord: ["Dr. Kavita Singh"],
     },
-    time: "10:30 AM",
+    time: `${time}`,
     poster:
       "https://res.cloudinary.com/storageforweb/image/upload/v1686665321/Aaghaaz/posters/dam_dmwhkl.png",
     rules: [
@@ -101,7 +102,7 @@ export const data: EventBody[] = [
       ],
       t_coord: ["Dr. Nitin Mohan"],
     },
-    time: "10:30 AM",
+    time: `${time}`,
     poster:
       "https://res.cloudinary.com/storageforweb/image/upload/v1686665778/Aaghaaz/posters/adzap_erywtz.png",
     rules: [
@@ -140,7 +141,7 @@ export const data: EventBody[] = [
       ],
       t_coord: ["Dr. Kavita Singh"],
     },
-    time: "10:30 AM",
+    time: `${time}`,
     poster:
       "https://res.cloudinary.com/storageforweb/image/upload/v1686665797/Aaghaaz/posters/jugaad_pbeoua.png",
     rules: [
@@ -179,7 +180,7 @@ export const data: EventBody[] = [
 
       t_coord: ["Mr. Manoj Kumar Chaudhary"],
     },
-    time: "10:30 AM",
+    time: `${time}`,
     poster:
       "https://res.cloudinary.com/storageforweb/image/upload/v1686665841/Aaghaaz/posters/bp_m8ghvo.png",
     rules: [
@@ -222,7 +223,7 @@ export const data: EventBody[] = [
       ],
       t_coord: ["Dr. Nitin Mohan"],
     },
-    time: "10:30 AM",
+    time: `${time}`,
     poster:
       "https://res.cloudinary.com/storageforweb/image/upload/v1686665862/Aaghaaz/posters/movie_m9s7oo.png",
     rules: [
@@ -272,7 +273,7 @@ export const data: EventBody[] = [
       ],
       t_coord: ["Mr. Ashish Pandey"],
     },
-    time: "10:30 AM",
+    time: `${time}`,
     poster:
       "https://res.cloudinary.com/storageforweb/image/upload/v1686763289/Aaghaaz/posters/web-a-thon_2_qhwy88.jpg",
     rules: [
@@ -315,7 +316,7 @@ export const data: EventBody[] = [
       ],
       t_coord: ["Mr. Varun Chaudhary "],
     },
-    time: "10:30 AM",
+    time: `${time}`,
     poster:
       "https://res.cloudinary.com/storageforweb/image/upload/v1686763289/Aaghaaz/posters/blind_coding_yiiv9u.jpg",
     rules: [
@@ -354,9 +355,9 @@ export const data: EventBody[] = [
       ],
       t_coord: ["Mr. Varun Chaudhary "],
     },
-    time: "10:30 AM",
+    time: `${time}`,
     poster:
-      "https://res.cloudinary.com/storageforweb/image/upload/v1686665862/Aaghaaz/posters/movie_m9s7oo.png",
+      "https://res.cloudinary.com/storageforweb/image/upload/v1686816680/Aaghaaz/posters/resPaperPresentation_bp8xfs.png",
     rules: [
       "Team of 1 or 2 members.",
       "Duration will be of 10 minutes including Q/A session.",
@@ -367,14 +368,14 @@ export const data: EventBody[] = [
     ],
   },
   {
-    eventName: "E-Sports",
+    eventName: "BGMI",
     eventId: 10,
     venue: " Block C, IMSEC",
     date: `${date}`,
     superr: "th",
     img: "https://res.cloudinary.com/storageforweb/image/upload/v1686720077/Aaghaaz/bgmi_jsmnhz.webp",
     description:
-      "Students will play BGMI. It may on group or Solo. Students  must carry mobile phones with games  installed  their mobile phone. Mobile data is to be used for internet connection.  Duration of this event will be 2 hours . Two awards will be given. Participants must adhere to the timelines. Incomplete entries or entries that do not comply with the above specifications will be automatically disqualified. Duration of the event will  2hours. Students from UG/PG Courses.",
+      "Students will play BGMI. It is a Solo event. Students  must carry mobile phones with games  installed  their mobile phone. Mobile data is to be used for internet connection. Duration of this event will be 2 hours . Two awards will be given. Participants must adhere to the timelines. Incomplete entries or entries that do not comply with the above specifications will be automatically disqualified. Duration of the event will  2hours. Students from UG/PG Courses.",
     rLink: "https://forms.gle/FMUs3hwfyzMS7nhw7",
     contact: {
       s_coord: [
@@ -397,9 +398,9 @@ export const data: EventBody[] = [
       ],
       t_coord: ["Ashish Pandey"],
     },
-    time: "10:30 AM",
+    time: `${time}`,
     poster:
-      "https://res.cloudinary.com/storageforweb/image/upload/v1686665862/Aaghaaz/posters/movie_m9s7oo.png",
+      "https://res.cloudinary.com/storageforweb/image/upload/v1686816558/Aaghaaz/posters/rezBGMI_eqfb91.png",
     rules: [
       "You need to Paarticipate Solo",
       "The Game must be Pre-Installed on the Device",
