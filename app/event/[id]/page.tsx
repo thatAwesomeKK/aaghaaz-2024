@@ -9,10 +9,15 @@ type PageProps = {
     };
 };
 
+const host = process.env.NEXT_PUBLIC_HOST
+
 async function Event({ params: { id } }: PageProps) {
     // const event = data.find((obj) => obj.eventId === parseInt(id));
-    const event: EventBody = await fetch(`http://localhost:3000/api/event/${id}`, { next: { revalidate: 60 } }).then(res => res.json())
-      
+    const event: EventBody = await fetch(`${host}/api/event/${id}`, { next: { revalidate: 60 } }).then(res => res.json())
+    const ex: EventBody = await fetch(`${host}/api/event`).then(res => res.json())
+    console.log(ex);
+    
+
     return (
         <div className='flex bg-[#555] overflow-y-hidden h-screen'>
             <div className='flex-1 mx-5 md:ml-12 pb-12 scrollbar-hide overflow-y-scroll'>
@@ -53,5 +58,12 @@ async function Event({ params: { id } }: PageProps) {
         </div>
     )
 }
+
+export async function generateStaticParams(){
+  const events: EventBody[] = await fetch(`${host}/api/event`).then(res => res.json())
+  return events.map((event)=>({
+    id: event.eventId.toString()
+  }))
+ }
 
 export default Event
