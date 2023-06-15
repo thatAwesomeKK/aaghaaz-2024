@@ -243,7 +243,7 @@ export const data: EventBody[] = [
       "Every movie should be given a suitable title.",
       "Title will be a criteria for judging.",
       "All teams can start their recording from begining of event AAGHAAZ 2K22 upto the movie making event.",
-      "The short film or video can include text, image, video, photos and any combination of Aagaaz 2022.",
+      "The short film or video can include text, image, video, photos and any combination of Aagaaz 2023.",
       "The movie must not contain any nudity or offensive word and inappropriate language.",
       "The decision of winner will decided by our organisers of the event and the panel of judges and every participants to must have follow them.",
       "In case of tie their would be an interesting tie-breaker game.",
