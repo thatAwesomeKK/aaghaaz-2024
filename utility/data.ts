@@ -48,11 +48,15 @@ export const data: EventBody[] = [
     contact: {
       s_coord: [
         {
-          name: "Abhishek Rai",
+          name: "Manshi Thakur",
           number: 7007428756,
         },
         {
-          name: "Somya Gupta",
+          name: "Shourya Rastogi",
+          number: 8650307853,
+        },
+        {
+          name: "Sukirti",
           number: 8650307853,
         },
       ],
@@ -88,15 +92,15 @@ export const data: EventBody[] = [
     contact: {
       s_coord: [
         {
-          name: "Ayushi Tyagi",
+          name: "Bhavya Malhotra",
           number: 9084744211,
         },
         {
-          name: "Nishita Tyagi",
+          name: "Vaibhav",
           number: 9354129826,
         },
         {
-          name: "Tanya Mishra",
+          name: "Md. Arman",
           number: 9354129826,
         },
       ],
@@ -131,11 +135,11 @@ export const data: EventBody[] = [
     contact: {
       s_coord: [
         {
-          name: "Mohd. Rohaan",
+          name: "Gautam Rastogi",
           number: 8802262079,
         },
         {
-          name: "Ashirwad Ruhela",
+          name: "Vanshika Varma",
           number: 9997055428,
         },
       ],
@@ -169,11 +173,15 @@ export const data: EventBody[] = [
     contact: {
       s_coord: [
         {
-          name: "Shefaly Shreya",
+          name: "Mansi Saxena",
           number: 7779873644,
         },
         {
-          name: "Muskan Goel",
+          name: "Shikhar Gupta",
+          number: 9935160857,
+        },
+        {
+          name: "Samiksha",
           number: 9935160857,
         },
       ],
@@ -205,19 +213,19 @@ export const data: EventBody[] = [
     contact: {
       s_coord: [
         {
-          name: "Sachin",
+          name: "Shourya Rastogi",
           number: 9130262580,
         },
         {
-          name: "Aniket Asthana",
+          name: "Prachi",
           number: 9161342134,
         },
         {
-          name: "Priya Gautam",
+          name: "Manshi Gupta",
           number: 9627235617,
         },
         {
-          name: "Anjali Srivastava",
+          name: "Gautam Gupta",
           number: 8840621016,
         },
       ],
