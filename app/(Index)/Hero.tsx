@@ -7,7 +7,7 @@ const tilt = Merriweather({ subsets: ['latin'], weight: ["900"] })
 
 function Hero() {
     return (
-        <div className='flex lg:flex-row flex-col justify-evenly items-center w-screen my-20'>
+        <div className='flex lg:flex-row flex-col justify-evenly items-center w-screen my-16'>
             <div className='relative h-52 w-52'>
                 <Image src="/assets/birdlogo.png" alt='birdlogo' fill />
             </div>

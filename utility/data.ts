@@ -259,20 +259,20 @@ export const data: EventBody[] = [
     contact: {
       s_coord: [
         {
-          name: "Ketan Koli",
-          number: 9205187096,
-        },
-        {
-          name: "Devanshu Kumar",
-          number: 7042613850,
-        },
-        {
           name: "Ankit Mishra",
           number: 9919063751,
         },
         {
           name: "Harsh Saxena",
           number: 9368218158,
+        },
+        {
+          name: "Devanshu Kumar",
+          number: 7042613850,
+        },
+        {
+          name: "Ketan Koli",
+          number: 9205187096,
         },
       ],
       t_coord: ["Mr. Ashish Pandey"],
