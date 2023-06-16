@@ -1,7 +1,7 @@
 import { EventBody } from "@/typings";
 
 const date = "22nd June";
-const time  = "9AM"
+const time = "9AM";
 export const data: EventBody[] = [
   {
     eventName: "ANVESHAN- The Corporate Quiz",
@@ -105,16 +105,22 @@ export const data: EventBody[] = [
     poster:
       "https://res.cloudinary.com/storageforweb/image/upload/v1686851772/Aaghaaz/posters/adzap_20230615_214855_0004_fk3fs6.png",
     rules: [
-      "It is a team event so students are required to participate in teams. Minimum 3 and maximum 5 members are allowed to participate.",
-      "The presentation should contain brand name, brand logo, jingle/tagline for the selected product or service. Topics would be provided on the spot.",
-      "Product or services to be advertised will be selected by the team’s representatives by picking chits containing the product name.",
-      "15 minutes preparation time for each team.",
-      "Time limit for performing the advertisement is 5 minutes.",
-      "No cell phones & electronic gadgets will be permitted to use.",
-      "No props will be given to participants; participants themselves have to manage additional or extra props.",
-      "Participants shall be judged on the basis of spontaneity, content, adherence to the topic, on-stage presentation, coordination and overall appeal of the advertisement.",
-      "The caution should be taken to refrain from displaying obscenity, violence, prejudice, defamation etc. in Advertisement.",
-      "Decision of the judges will be final and binding.",
+      "Team must consist of minimum 3 and max 4 members in a team",
+      "Event is having only one round.",
+      "Team can choose topic (Product) for the advertisement by themselves only and prepare your advertisement in advance.",
+      "Advertisement must consist of Tagline/Jingles, Logo, Description",
+      "Team must carry the product of advertisement.",
+      "Avoid controversial topic.",
+      "Advertisement should not be copied from the television.",
+      "Prepare logo and tag line in advance on the presentation which will be displayed by the projector at the time of performance.",
+      "Try to adhere to the product advertisement.",
+      "Kindly adhere the time limit, Pitch must be 30-50 seconds & description of the product 1-2 minutes",
+      "In case any team exceeds the time limits, team will be disqualified.",
+      "The advertisement can be in Hindi and English language.",
+      "Caution should not be refraining from displaying obscenity, violence, prejudice, defamation etc. in advertisement.",
+      "The decision of Judges will be final and binding.",
+      "There should be no exposure to biasness against any caste or community or religion through you performance.",
+      "Judgment criteria , Ability to attract an audience and attention; Team work, Overall script and play ; Creativity, Acting and fluency ;Originality; Humor, Content information, Awareness",
     ],
   },
   {
@@ -330,7 +336,7 @@ export const data: EventBody[] = [
     eventId: 9,
     venue: "Auditorium, Block C, IMSEC",
     date: `${date}`,
-	cashPrize: ["₹5000/-", "₹3000/-"],
+    cashPrize: ["₹5000/-", "₹3000/-"],
     superr: "th",
     img: "https://res.cloudinary.com/storageforweb/image/upload/v1686733746/Aaghaaz/images_ziyykb.jpg",
     description:

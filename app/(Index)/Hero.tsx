@@ -7,7 +7,7 @@ const tilt = Merriweather({ subsets: ['latin'], weight: ["900"] })
 
 function Hero() {
     return (
-        <div className='flex justify-evenly items-center w-screen'>
+        <div className='flex md:flex-row flex-col justify-evenly items-center w-screen mb-7'>
             <div className='relative h-52 w-52'>
                 <Image src="/assets/birdlogo.png" alt='birdlogo' fill />
             </div>
@@ -20,11 +20,10 @@ function Hero() {
                 </div>
                 <p className="-mt-4 text-lg font-bold text-white text-center"> By Department of MBA & MCA</p>
                 <div className='flex justify-center animate-pulse font-extrabold text-2xl text-yellow-400 space-x-2 pb-10'>
-                    <p className=''>Register Here:</p>
-                    <Link href="https://rb.gy/on77s" target='_blank'>https://rb.gy/on77s</Link>
+                    <Link href="https://rb.gy/on77s" target='_blank'>Register Here!</Link>
                 </div>
             </div>
-            <div className='relative h-52 w-52'>
+            <div className='relative h-28 w-28 md:h-52 md:w-52'>
                 <Image className='object-cover' src="/assets/logo.png" alt='logo' fill />
             </div>
         </div>
