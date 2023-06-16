@@ -120,7 +120,7 @@ export const data: EventBody[] = [
       "Caution should not be refraining from displaying obscenity, violence, prejudice, defamation etc. in advertisement.",
       "The decision of Judges will be final and binding.",
       "There should be no exposure to biasness against any caste or community or religion through you performance.",
-      "Judgment criteria , Ability to attract an audience and attention; Team work, Overall script and play ; Creativity, Acting and fluency ;Originality; Humor, Content information, Awareness",
+      "Judgment criteria , Ability to attract an audience and attention; Team work, Overall script and play; Creativity, Acting and fluency;Originality, Humor, Content information, Awareness",
     ],
   },
   {
