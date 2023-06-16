@@ -1,21 +1,31 @@
 import React from 'react'
+import { Merriweather } from 'next/font/google'
+import Link from 'next/link'
+import Image from 'next/image'
+
+const tilt = Merriweather({ subsets: ['latin'], weight: ["900"] })
 
 function Hero() {
     return (
-        <div className='py-10'>
-            <div className='relative h-[9vh]'>
-                <h1 className='absolute text-7xl font-bold left-1/2 transform -translate-x-[52%] text-gray-400 tracking-wide'>AAGHAAZ</h1>
-                <h1 className='absolute text-7xl font-bold left-1/2 transform -translate-x-1/2 text-white z-10 tracking-wide'>AAGHAAZ</h1>
-                <h1 className='absolute text-7xl font-bold left-1/2 transform -translate-x-[48%] text-red-400 tracking-wide'>AAGHAAZ</h1>
+        <div className='flex justify-evenly items-center w-screen'>
+            <div className='relative h-52 w-52'>
+                <Image src="/assets/birdlogo.png" alt='birdlogo' fill />
             </div>
-            <div className="text-center">
-                <p className='font-semibold text-3xl text-white'>2023</p>
-                <div className="flex items-center justify-center h-16 w-[100vw] relative">
+            <div>
+                <h1 className={`${tilt.className} text-center text-7xl font-bold text-black tracking-wide pt-10`}>AAGHAAZ 2K23</h1>
+                <p className={`${tilt.className} font-bold text-3xl text-black text-center`}>Mega Tech Fusion</p>
+                <div className="flex items-center justify-center h-16 relative">
                     <hr className="absolute w-[30vw] bg-gray-200" />
-                    <p className="absolute px-3 text-3xl font-bold bg-slate-500 text-white">A MANAGEMENT FEST</p>
+                    <p className="absolute px-3 text-3xl font-bold bg-[#2864b8] text-white">A MANAGEMENT FEST</p>
                 </div>
-                <p className="-mt-4 text-lg font-bold text-white"> By Department of MBA & MCA</p>
-                <p className='text-white'>Register Here: </p>
+                <p className="-mt-4 text-lg font-bold text-white text-center"> By Department of MBA & MCA</p>
+                <div className='flex justify-center animate-pulse font-extrabold text-2xl text-yellow-400 space-x-2 pb-10'>
+                    <p className=''>Register Here:</p>
+                    <Link href="https://rb.gy/on77s" target='_blank'>https://rb.gy/on77s</Link>
+                </div>
+            </div>
+            <div className='relative h-52 w-52'>
+                <Image className='object-cover' src="/assets/logo.png" alt='logo' fill />
             </div>
         </div>
     )

@@ -16,16 +16,14 @@ export const data: EventBody[] = [
     contact: {
       s_coord: [
         {
-          name: "Isha Vats",
-          number: 9873468078,
-        },
-        {
           name: "Gagnesh Bhardwaj ",
           number: 9711162310,
         },
         {
           name: "Mani Bansal",
-          number: 9457777402,
+        },
+        {
+          name: "Isha Vats",
         },
       ],
       t_coord: ["Mr. Manoj Kumar Chaudhary"],
@@ -48,16 +46,14 @@ export const data: EventBody[] = [
     contact: {
       s_coord: [
         {
-          name: "Manshi Thakur",
-          number: 7007428756,
+          name: "Shourya Rastogi",
+          number: 7088336897,
         },
         {
-          name: "Shourya Rastogi",
-          number: 8650307853,
+          name: "Manshi Thakur",
         },
         {
           name: "Sukirti",
-          number: 8650307853,
         },
       ],
       t_coord: ["Dr. Kavita Singh"],
@@ -92,16 +88,15 @@ export const data: EventBody[] = [
     contact: {
       s_coord: [
         {
-          name: "Bhavya Malhotra",
-          number: 9084744211,
-        },
-        {
           name: "Vaibhav",
-          number: 9354129826,
+          number: 8953742718,
         },
         {
           name: "Md. Arman",
-          number: 9354129826,
+          number: 9368888162,
+        },
+        {
+          name: "Bhavya Malhotra",
         },
       ],
       t_coord: ["Dr. Nitin Mohan"],
@@ -136,11 +131,10 @@ export const data: EventBody[] = [
       s_coord: [
         {
           name: "Gautam Rastogi",
-          number: 8802262079,
+          number: 7895173156,
         },
         {
-          name: "Vanshika Varma",
-          number: 9997055428,
+          name: "Vanshika Verma",
         },
       ],
       t_coord: ["Dr. Kavita Singh"],
@@ -173,16 +167,14 @@ export const data: EventBody[] = [
     contact: {
       s_coord: [
         {
-          name: "Mansi Saxena",
-          number: 7779873644,
+          name: "Shikhar Gupta",
+          number: 8800637993,
         },
         {
-          name: "Shikhar Gupta",
-          number: 9935160857,
+          name: "Mansi Saxena",
         },
         {
           name: "Samiksha",
-          number: 9935160857,
         },
       ],
 
@@ -214,19 +206,17 @@ export const data: EventBody[] = [
       s_coord: [
         {
           name: "Shourya Rastogi",
-          number: 9130262580,
-        },
-        {
-          name: "Prachi",
-          number: 9161342134,
-        },
-        {
-          name: "Manshi Gupta",
-          number: 9627235617,
+          number: 7088336897,
         },
         {
           name: "Gautam Gupta",
-          number: 8840621016,
+          number: 7017918413,
+        },
+        {
+          name: "Prachi",
+        },
+        {
+          name: "Manshi",
         },
       ],
       t_coord: ["Dr. Nitin Mohan"],
@@ -358,7 +348,6 @@ export const data: EventBody[] = [
         },
         {
           name: "Simran",
-          number: 9136171566,
         },
       ],
       t_coord: ["Mr. Varun Chaudhary "],

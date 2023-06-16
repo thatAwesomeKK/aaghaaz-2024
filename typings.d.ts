@@ -11,7 +11,7 @@ export type EventBody = {
   contact: {
     s_coord: {
       name: string;
-      number: number;
+      number?: number;
     }[];
     t_coord: string[];
   };
