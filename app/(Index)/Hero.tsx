@@ -20,7 +20,7 @@ function Hero() {
                 <p className="-mt-4 text-lg font-bold text-white text-center"> By Department of MBA & MCA</p>
                 <Link className='flex justify-center animate-pulse font-extrabold text-2xl text-yellow-400 mt-3' href="https://rb.gy/on77s" target='_blank'>Register Here!</Link>
             </div>
-            <div className='relative h-28 w-28 lg:h-52 lg:w-52'>
+            <div className='relative lg:mt-0 mt-3 h-28 w-28 lg:h-52 lg:w-52'>
                 <Image className='object-cover' src="/assets/logo.png" alt='logo' fill />
             </div>
         </div>
