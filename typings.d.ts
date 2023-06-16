@@ -23,7 +23,7 @@ export type EventBody = {
 type Coordinator = {
   s_coord: {
     name: string;
-    number: number;
+    number?: number;
   }[];
   t_coord: string[];
 };
