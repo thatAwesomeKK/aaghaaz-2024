@@ -405,7 +405,7 @@ export const data: EventBody[] = [
     poster:
       "https://res.cloudinary.com/storageforweb/image/upload/v1686852152/Aaghaaz/posters/BGMI_kixol0.png",
     rules: [
-      "You need to Paarticipate Solo",
+      "It is a 4-Man Squad Event",
       "The Game must be Pre-Installed on the Device",
       "The Organizers won't be responsible for any technical failure on the participant's side",
       "Participants must have Mobile Data",
