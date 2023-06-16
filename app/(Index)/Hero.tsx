@@ -19,7 +19,7 @@ function Hero() {
                     <p className="absolute px-3 text-3xl font-bold bg-[#2864b8] text-white">A MANAGEMENT FEST</p>
                 </div>
                 <p className="-mt-4 text-lg font-bold text-white text-center"> By Department of MBA & MCA</p>
-                    <Link className='flex justify-center animate-pulse font-extrabold text-2xl text-yellow-400' href="https://rb.gy/on77s" target='_blank'>Register Here!</Link>
+                    <Link className='flex justify-center animate-pulse font-extrabold text-2xl text-yellow-400 mb-4' href="https://rb.gy/on77s" target='_blank'>Register Here!</Link>
             </div>
             <div className='relative h-28 w-28 md:h-52 md:w-52'>
                 <Image className='object-cover' src="/assets/logo.png" alt='logo' fill />
