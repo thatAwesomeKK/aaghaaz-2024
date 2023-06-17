@@ -31,7 +31,19 @@ export const data: EventBody[] = [
     time: "12:30 PM",
     poster:
       "https://res.cloudinary.com/storageforweb/image/upload/v1686851735/Aaghaaz/posters/anveshan_20230615_223017_0001_kkwwpy.png",
-    rules: [],
+    rules: [
+      "1.	A team must comprise of only 2 members.",
+      "2.	Only 3 teams are allowed from each college.",
+      "There are 3 rounds in total.",
+      "First round – It comprise of 15 questions, which will carry 5 marks each. It will be a written round, of 15 minutes in total. All teams can participate in this round. (No negative marking).",
+      "Second round – 10 shortlisted teams will proceed further for this round. There will be 2 leagues A and B. Each team will get 45 seconds to answer the question. (Negative marking-1 wrong answer 2 marks will get deduct).",
+      "Third round – This round will be buzzer round. 4 shortlisted teams will proceed further. (Negative marking-1 wrong answer 2 marks will get deduct).",
+      "There will not be any passing of question.",
+      "Evaluation will be done on the basis of above 3 rounds.",
+      "In case of a tie, a tie-breaker question will be asked.",
+      "Failure to comply with these rules may result in point reduction or complete disqualification from the event (no use of phone – switch off).",
+      "Decision of judges will be final and binding.",
+    ],
   },
   {
     eventName: "100 Ka Dam",
