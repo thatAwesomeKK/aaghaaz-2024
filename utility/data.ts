@@ -179,7 +179,7 @@ export const data: EventBody[] = [
     img: "https://res.cloudinary.com/storageforweb/image/upload/v1686665605/Aaghaaz/businessplan_dvand9.gif",
 
     description:
-      "Each team should comprise a maximum of 4 participants. A member can be part of only one team. No change in the team structure is permitted after the team has registered. The event is open for students of MBA, PGDM, B.Tech, BBA, BCA Participants must adhere to the timelines. Incomplete entries or entries that do not comply with the above specifications will be automatically disqualified.",
+      "Each team should comprise a maximum of 3 participants. A member can be part of only one team. No change in the team structure is permitted after the team has registered. The event is open for students of MBA, PGDM, B.Tech, BBA, BCA Participants must adhere to the timelines. Incomplete entries or entries that do not comply with the above specifications will be automatically disqualified.",
 
     rLink: "https://forms.gle/U7QmwmrWFcxSTP1w8",
     contact: {
