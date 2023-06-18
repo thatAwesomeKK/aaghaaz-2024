@@ -241,7 +241,7 @@ export const data: EventBody[] = [
     },
     time: `${time}`,
     poster:
-      "https://res.cloudinary.com/storageforweb/image/upload/v1686851886/Aaghaaz/posters/movie_20230615_214855_0006_plyzkj.png",
+      "https://res.cloudinary.com/storageforweb/image/upload/v1687077321/Aaghaaz/posters/13_euc4fe.png",
     rules: [
       "Every team should comprises of 2-3 members each.",
       "Once the registration process will complete their would be no change and incomplete details or registration will automatically disqualified from the event participation.",
