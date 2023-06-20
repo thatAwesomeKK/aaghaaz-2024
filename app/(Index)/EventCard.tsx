@@ -30,7 +30,7 @@ border-solid border-t-transparent border-b-transparent border-l-[#d16a6a]"></div
       <div className='flex justify-center'>
         <hr className='w-72 bg-slate-400' />
       </div>
-      <Buttons eventId={event.eventId} contact={event.contact} />
+      <Buttons eventId={event.eventId} contact={event.contact} rLink={event.rLink} />
     </div>
   )
 }

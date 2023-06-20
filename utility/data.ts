@@ -12,7 +12,7 @@ export const data: EventBody[] = [
     img: "https://res.cloudinary.com/storageforweb/image/upload/v1686665155/Aaghaaz/quiz_kxeawj.jpg",
     description:
       "One team will comprise of not more than two participants. Per college, not more than 3 teams will be allowed. The first round will be a screening round (written). Out of the screening round, the top 10 teams qualify to play in the second round (league A and league B). The top four teams then compete in the third round. Winners are declared as 1st only. In the event of a tie, a tie-breaker question will be asked.",
-    rLink: "https://forms.gle/KRnyBQEHg8RuxjWy5",
+    rLink: "https://forms.gle/3GZyd7Mwy4u3k48e6",
     contact: {
       s_coord: [
         {
@@ -54,7 +54,7 @@ export const data: EventBody[] = [
     img: "https://res.cloudinary.com/storageforweb/image/upload/v1686665292/Aaghaaz/invest_m4ewn0.gif",
     description:
       "It’s a group activity where each group would be given Rs. 100 as startup capital.A group may consist of 3-4 members. They would have to purchase some raw material, create something out of it and sell it to the people and report back after 3 hours to judges with a video showing the selling. The winners would be decided on the basis of the profit, method of selling etc. Participants would present the strategies used for selling and profits earned. Students from Professional courses like MBA, B.Tech, BBA, BCA and MIB will be allowed to participate. Team members can be from different graduate or undergraduate programs on the same team. Eatable items are not allowed to sale . Showing false sales or indulging in any kind of unfair practice will lead to disqualification from the event.",
-    rLink: "https://forms.gle/dqN1xZd6mYD3PUYN8",
+    rLink: "https://forms.gle/y7NG64T6S4deER8h7",
     contact: {
       s_coord: [
         {
@@ -96,7 +96,7 @@ export const data: EventBody[] = [
     description:
       "Ad Zap is an exhilarating and cutting-edge event designed to bring together advertising professionals, marketers, entrepreneurs, and creative enthusiasts for an immersive experience in the world of advertising. This event aims to explore the latest trends, strategies, and innovations in the advertising industry while providing a platform for networking and collaboration.",
 
-    rLink: "https://forms.gle/QmWAHnsTfDvHwqD56",
+    rLink: "https://forms.gle/FQWv4Wjwwk5BxTC96",
     contact: {
       s_coord: [
         {
@@ -144,7 +144,7 @@ export const data: EventBody[] = [
     img: "https://res.cloudinary.com/storageforweb/image/upload/v1686665568/Aaghaaz/garbage-recycle_eydnki.svg",
     description:
       "It’s a team activity. Participants are supposed to transform their waste products into some useful product with the existing material. 1hour and 30 minutes would be provided to complete the activity. A team of 3-4 students are invited to participate.Teams need to bring their own Waste Material / products (min 3 max 10). Winner will be awarded on the basis of the judgment criteria. In case of any dispute, jury members will be authorized to take the final decision. Stationary will be provided to every team.",
-    rLink: "https://forms.gle/BjaeSaXLyHsFw9ms7",
+    rLink: "https://forms.gle/JR1iFgUqxCHYP26M7",
     contact: {
       s_coord: [
         {
@@ -181,7 +181,7 @@ export const data: EventBody[] = [
     description:
       "Each team should comprise a maximum of 3 participants. A member can be part of only one team. No change in the team structure is permitted after the team has registered. The event is open for students of MBA, PGDM, B.Tech, BBA, BCA Participants must adhere to the timelines. Incomplete entries or entries that do not comply with the above specifications will be automatically disqualified.",
 
-    rLink: "https://forms.gle/U7QmwmrWFcxSTP1w8",
+    rLink: "https://forms.gle/DyixyAbfgAFfs9bw8",
     contact: {
       s_coord: [
         {
@@ -219,7 +219,7 @@ export const data: EventBody[] = [
     img: "https://res.cloudinary.com/storageforweb/image/upload/v1686665653/Aaghaaz/movie_nqmlns.gif",
     description:
       "Each team should comprise a maximum of three students. A member can be part of only one team. No change in the team structure is permitted after the team has registered, The event is open for students of any UG/PG Course, Participants must adhere to the timelines. Incomplete entries or entries that do not comply with the above specifications will be automatically disqualified.Teams would cover Aaghaaz 2023 in their videos, edit and present the videos in form of movie. The short film can include text, images, photos, videos or any combination of these elements on Aaghaaz. The Video duration must be a minimum of 5 min and a maximum of 10 min. The decision of the organizers of the event and the panel of judges will be final and will be binding on all the participants. The video must not contain any nudity , otherwise offensive or inappropriate content.",
-    rLink: "https://forms.gle/FMUs3hwfyzMS7nhw7",
+    rLink: "https://forms.gle/8oQPAnjEzb9jMnyK7",
     contact: {
       s_coord: [
         {
@@ -267,7 +267,7 @@ export const data: EventBody[] = [
     img: "https://res.cloudinary.com/storageforweb/image/upload/v1686719042/Aaghaaz/website_mx0moj.jpg",
     description:
       "Welcome to the exciting Web Design Contest, it can be participated in individual or a team of 2, participants will showcase their creativity and skills by designing a dynamic webpage based on a theme revealed on the spot. This competition aims to test your ability to create an engaging and visually appealing website while incorporating functional elements.The theme for the contest will be announced at the beginning of the competition. It could be anything from a specific industry, a social cause, a fictional concept, or even a real-world event. Prepare yourself to adapt quickly and bring your unique perspective to the given theme. Students from any UG/PG Course can participate. ",
-    rLink: "https://forms.gle/FMUs3hwfyzMS7nhw7",
+    rLink: "https://forms.gle/tUrdcmu36ykZFzCd6",
     contact: {
       s_coord: [
         {
@@ -310,7 +310,7 @@ export const data: EventBody[] = [
     img: "https://res.cloudinary.com/storageforweb/image/upload/v1686719361/Aaghaaz/blind_coding_py8xjt.png",
     description:
       "It is coding contest, in which participant will write code of the given proble, without having code visible.  Monitor will be in off mode. There will be three rounds of 15 minutes each.  Participant can write the code in either C/C++/JAVA. Two awards will be given. Participants must adhere to the timelines. Incomplete entries or entries that do not comply with the above specifications will be automatically disqualified. Duration of the event will  2hours. Students from any UG/PG Course can participate.",
-    rLink: "https://forms.gle/FMUs3hwfyzMS7nhw7",
+    rLink: "https://forms.gle/bXrLoQXdTq6rCcVa7",
     contact: {
       s_coord: [
         {
@@ -353,7 +353,7 @@ export const data: EventBody[] = [
     img: "https://res.cloudinary.com/storageforweb/image/upload/v1686733746/Aaghaaz/images_ziyykb.jpg",
     description:
       "Research paper presentation will be held on recent IT topics. Team of two members  can present their views and ideas on their topic through ppt presentation. Duration of each presentation wil be maxiamum 15 minutes including Q/A sessions. Two awards will be given. Participants must adhere to the timelines. Incomplete entries or entries that do not comply with the above specifications will be automatically disqualified. Duration of the event will  2hours. Students from any UG/PG Course can participate",
-    rLink: "https://forms.gle/FMUs3hwfyzMS7nhw7",
+    rLink: "https://forms.gle/Nd27hFY1STtpb3RR7",
     contact: {
       s_coord: [
         {
@@ -391,7 +391,7 @@ export const data: EventBody[] = [
     img: "https://res.cloudinary.com/storageforweb/image/upload/v1686720077/Aaghaaz/bgmi_jsmnhz.webp",
     description:
       "The featured game is BGMI. It is a 4-man squad event. Students must carry their own mobile phones with their own mobile data for the internet connection. Duration of this Event will be for around 2 hours . Two awards will be given. Each team MUST have 4 members. Participants must report at the specified time. Incomplete entries or entries that do not comply with the above specifications will be automatically disqualified. Event is for UG/PG students only. Go get that Chicken Dinner!.",
-    rLink: "https://forms.gle/FMUs3hwfyzMS7nhw7",
+    rLink: "https://forms.gle/pYAbAVSR6yKTiRoy5",
     contact: {
       s_coord: [
         {
