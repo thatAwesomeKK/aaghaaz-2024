@@ -19,20 +19,8 @@ export async function signIn(authKey: string) {
   const info = verifiedToken as jwtInfo;
 
   console.log(info);
-  cookies().set("role", info.role, {
-    domain: process.env.COOKIE_DOMAIN,
-    path:'/',
-    httpOnly: true,
-    sameSite: "none",
-    secure: true,
-  });
-  cookies().set("eventId", info.eventId, {
-    domain: process.env.COOKIE_DOMAIN,
-    path:'/',
-    httpOnly: true,
-    sameSite: "none",
-    secure: true,
-  });
+  cookies().set("role", info.role);
+  cookies().set("eventId", info.eventId);
 }
 
 export async function signOut() {
