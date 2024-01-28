@@ -9,7 +9,6 @@ import {
 import { Loader2, Plus, X } from "lucide-react";
 import { EventBody } from "../../../typings";
 import { Button } from "../ui/button";
-import eventData from "@/utility/data.json";
 import { updateFile } from "@/lib/server/actions/event";
 import {
   Dialog,
@@ -36,9 +35,10 @@ import {
 interface Props {
   event: EventBody;
   id: string;
+  initialEvents: EventBody[];
 }
 
-const DragAndDropRules = ({ event, id }: Props) => {
+const DragAndDropRules = ({ event, id, initialEvents }: Props) => {
   const [rules, setRules] = useState(event.rules);
 
   const handleOnDragEnd = (result: DropResult) => {
@@ -70,10 +70,10 @@ const DragAndDropRules = ({ event, id }: Props) => {
   };
 
   const onSubmit = async () => {
-    const toChange = eventData[event.eventId - 1];
+    const toChange = initialEvents[event.eventId - 1];
     toChange.rules = rules;
-    eventData[event.eventId - 1] = toChange;
-    await updateFile(eventData);
+    initialEvents[event.eventId - 1] = toChange;
+    await updateFile(initialEvents);
   };
 
   if (!rules) return <div></div>;

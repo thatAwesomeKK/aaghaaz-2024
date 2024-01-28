@@ -1,5 +1,4 @@
 "use client";
-import eventData from "@/utility/data.json";
 import React, { useState } from "react";
 import {
   DragDropContext,
@@ -18,9 +17,10 @@ interface Props {
   id: string;
   typeName: string;
   name?: string;
+  initialEvents: EventBody[];
 }
 
-const DragAndDrop = ({ event, id, typeName, name }: Props) => {
+const DragAndDrop = ({ event, id, typeName, name, initialEvents }: Props) => {
   const [coords, setCoords] = useState(
     event?.contact[typeName as keyof Coordinator]
   );
@@ -55,10 +55,10 @@ const DragAndDrop = ({ event, id, typeName, name }: Props) => {
   };
 
   const onSubmit = async () => {
-    const toChange = eventData[event.eventId - 1];
+    const toChange = initialEvents[event.eventId - 1];
     toChange.contact[typeName as keyof Coordinator] = coords;
-    eventData[event.eventId - 1] = toChange;
-    await updateFile(eventData);
+    initialEvents[event.eventId - 1] = toChange;
+    await updateFile(initialEvents);
   };
 
   return (

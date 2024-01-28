@@ -18,7 +18,6 @@ import { Loader2 } from "lucide-react";
 import ImageUploader from "../ImageUploader";
 import { Textarea } from "../ui/textarea";
 import { EventBody } from "../../../typings";
-import eventData from "@/utility/data.json";
 import { updateFile } from "@/lib/server/actions/event";
 
 const formSchema = z.object({
@@ -30,8 +29,9 @@ const formSchema = z.object({
 
 interface Props {
   event?: EventBody;
+  initialEvents: EventBody[];
 }
-const UpdateEventInfo = ({ event }: Props) => {
+const UpdateEventInfo = ({ event, initialEvents }: Props) => {
   const [loading, setLoading] = useState(false);
   const [imageURL, setImageURL] = useState(event?.img);
   const [posterURL, setPosterURL] = useState(event?.poster);
@@ -51,7 +51,7 @@ const UpdateEventInfo = ({ event }: Props) => {
 
       let flag = 0;
 
-      const toChange = eventData[event?.eventId - 1];
+      const toChange = initialEvents[event?.eventId - 1];
 
       if (toChange.eventName !== values.eventName) {
         toChange.eventName = values.eventName;
@@ -83,8 +83,8 @@ const UpdateEventInfo = ({ event }: Props) => {
         setLoading(false);
         return;
       }
-      eventData[event.eventId - 1] = toChange;
-      await updateFile(eventData);
+      initialEvents[event.eventId - 1] = toChange;
+      await updateFile(initialEvents);
       //   await signIn(values.authKey);
       // alertCall("success", "Signed in successfully!");
       setLoading(false);
