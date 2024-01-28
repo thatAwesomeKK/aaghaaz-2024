@@ -9,7 +9,7 @@ interface Props {
   setImageURL: React.Dispatch<React.SetStateAction<string | undefined>>;
 }
 
-const hostname = process.env.NEXT_PUBLIC_VERCEL_URL || "http://localhost:3000";
+const hostname = process.env.NEXT_PUBLIC_URL || "http://localhost:3000";
 
 const ImageUploader = ({ imageURL, setImageURL }: Props) => {
   const [image, setImage] = useState(imageURL);
