@@ -34,7 +34,7 @@ function Buttons({ eventId, contact, rLink }: Props) {
   return (
     // @ts-ignore
     <div ref={ref} className='bg-gray-300 flex justify-evenly rounded-b-lg'>
-      <Link href={rLink} target='_blank' className={`${alkatra.className} hover:bg-blue-400 flex-1 py-4 tracking-widest text-center rounded-bl-lg`}>Register</Link>
+      {/* <Link href={rLink} target='_blank' className={`${alkatra.className} hover:bg-blue-400 flex-1 py-4 tracking-widest text-center rounded-bl-lg`}>Register</Link> */}
       <Link href={`/event/${eventId}`} className={`${alkatra.className} hover:bg-blue-400 flex-1 py-4 tracking-widest text-center rounded-bl-lg`}>Know More</Link>
       <div className='relative flex-1'>
         <button onClick={() => setIsOpen(!isOpen)} className={`${alkatra.className} hover:bg-blue-400 tracking-widest py-4 w-full rounded-br-lg`}>Contacts</button>
