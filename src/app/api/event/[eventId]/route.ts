@@ -11,8 +11,6 @@ export async function GET(
       headers: {
         "X-Master-Key":
           "$2a$10$4dS9mN2/KNRiL2g/atBaTu4Pj6fqIZBFBaIHUcT3Rql33ozttWmSG",
-        "X-Access-Key":
-          "$2a$10$zuJKZQUyZYaRAa7cvzt/Pupo.14iB9mIBIRuZhllKhqOgvRUHWbUq",
       },
     }
   ).then((res) => res.json());

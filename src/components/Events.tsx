@@ -12,6 +12,7 @@ async function Events() {
         "X-Access-Key":
           "$2a$10$zuJKZQUyZYaRAa7cvzt/Pupo.14iB9mIBIRuZhllKhqOgvRUHWbUq",
       },
+      next: { revalidate: 60 },
     }
   ).then((res) => res.json());
   const eventData: EventBody[] = payload.record;
