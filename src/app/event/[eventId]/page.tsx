@@ -126,7 +126,7 @@ async function Event({ params: { eventId } }: PageProps) {
 }
 
 export async function generateStaticParams() {
-  const events: EventBody[] = await fetch(`${host}/api/event`).then((res) =>
+  const events: EventBody[] = await fetch(`${process.env.API_URL}/api/event`).then((res) =>
     res.json()
   );
 
