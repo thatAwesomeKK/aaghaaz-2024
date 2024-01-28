@@ -129,7 +129,8 @@ export async function generateStaticParams() {
   const events: EventBody[] = await fetch(`${host}/api/event`).then((res) =>
     res.json()
   );
-
+    console.log(events);
+    
   return events.map((event) => ({
     id: event.eventId.toString(),
   }));
