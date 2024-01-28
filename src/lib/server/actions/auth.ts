@@ -1,7 +1,6 @@
 "use server";
 import jwt, { JwtPayload } from "jsonwebtoken";
 import { cookies } from "next/headers";
-import { redirect } from "next/navigation";
 
 const jwtPublicKey = process.env.JWT_PUBLIC_KEY!;
 const jwtPrivateKey = process.env.JWT_PRIVATE_KEY!;
@@ -22,12 +21,14 @@ export async function signIn(authKey: string) {
   console.log(info);
   cookies().set("role", info.role, {
     domain: process.env.COOKIE_DOMAIN,
+    path:'/',
     httpOnly: true,
     sameSite: "none",
     secure: true,
   });
   cookies().set("eventId", info.eventId, {
     domain: process.env.COOKIE_DOMAIN,
+    path:'/',
     httpOnly: true,
     sameSite: "none",
     secure: true,
