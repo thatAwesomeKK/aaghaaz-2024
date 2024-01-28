@@ -36,7 +36,7 @@ export async function updateFile(data: any) {
         },
       }
     ).then((res) => res.json());
-    console.log(res);
+
   } catch (error) {
     console.log(error);
   }
