@@ -4,7 +4,6 @@ export type EventBody = {
   venue: string;
   date: string;
   cashPrize?: string[];
-  superr: string;
   img: string;
   description: string;
   rLink: string;
@@ -13,7 +12,10 @@ export type EventBody = {
       name: string;
       number?: number;
     }[];
-    t_coord: string[];
+    t_coord: {
+      name: string;
+      number?: number;
+    }[];
   };
   time: string;
   poster: string;
@@ -25,5 +27,8 @@ type Coordinator = {
     name: string;
     number?: number;
   }[];
-  t_coord: string[];
+  t_coord: {
+    name: string;
+    number?: number;
+  }[];
 };
