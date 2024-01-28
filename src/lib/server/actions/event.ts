@@ -1,6 +1,5 @@
 "use server";
-import fs from "fs";
-import eventData from "@/utility/data.json";
+import { EventBody } from "../../../../typings";
 
 export async function editEvent(data: Object) {
   try {
@@ -9,20 +8,35 @@ export async function editEvent(data: Object) {
 
 export async function updateFile(data: any) {
   try {
-    if (eventData === data) return console.log("No changes made");
-    fs.writeFile(
-      "src/utility/data.json",
-      JSON.stringify(data),
-      "utf8",
-      (writeErr) => {
-        if (writeErr) {
-          console.error("Error writing file:", writeErr);
-          return;
-        }
-
-        console.log("JSON file updated successfully.");
+    const payload = await fetch(
+      "https://api.jsonbin.io/v3/b/65b69344dc746540189ce0d0",
+      {
+        headers: {
+          "X-Master-Key":
+            "$2a$10$4dS9mN2/KNRiL2g/atBaTu4Pj6fqIZBFBaIHUcT3Rql33ozttWmSG",
+          "X-Access-Key":
+            "$2a$10$zuJKZQUyZYaRAa7cvzt/Pupo.14iB9mIBIRuZhllKhqOgvRUHWbUq",
+        },
       }
-    );
+    ).then((res) => res.json());
+    const eventData: EventBody[] = payload.record;
+    // console.log(eventData);
+
+    if (eventData === data) return console.log("No changes made");
+    
+    const res = await fetch(
+      "https://api.jsonbin.io/v3/b/65b69344dc746540189ce0d0",
+      {
+        method: "PUT",
+        body: JSON.stringify(data),
+        headers: {
+          "X-Master-Key":
+            "$2a$10$4dS9mN2/KNRiL2g/atBaTu4Pj6fqIZBFBaIHUcT3Rql33ozttWmSG",
+          "Content-Type": "application/json",
+        },
+      }
+    ).then((res) => res.json());
+    console.log(res);
   } catch (error) {
     console.log(error);
   }

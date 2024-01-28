@@ -21,7 +21,7 @@
     "clsx": "^2.1.0",
     "jsonwebtoken": "^9.0.2",
     "lucide-react": "^0.316.0",
-    "next": "13.4.19",
+    "next": "latest",
     "next-cloudinary": "^5.20.0",
     "react": "^18",
     "react-beautiful-dnd": "^13.1.1",
