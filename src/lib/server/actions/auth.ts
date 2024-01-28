@@ -21,13 +21,13 @@ export async function signIn(authKey: string) {
 
   console.log(info);
   cookies().set("role", info.role, {
-    path: "/",
+    domain: process.env.COOKIE_DOMAIN,
     httpOnly: true,
     sameSite: "none",
     secure: true,
   });
   cookies().set("eventId", info.eventId, {
-    path: "/",
+    domain: process.env.COOKIE_DOMAIN,
     httpOnly: true,
     sameSite: "none",
     secure: true,
