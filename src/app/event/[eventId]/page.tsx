@@ -11,7 +11,7 @@ type PageProps = {
   };
 };
 
-const host = process.env.API_IP_ADDRES;
+const host = process.env.API_IP_ADDRESS;
 
 async function Event({ params: { eventId } }: PageProps) {
   const event: EventBody = await fetch(`${host}/api/event/${eventId}`, {
