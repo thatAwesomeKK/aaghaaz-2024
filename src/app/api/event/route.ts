@@ -11,7 +11,6 @@ export async function GET(request: Request) {
       cache: "no-store"
     }
   ).then((res) => res.json());
-  console.log(payload);
   
   const eventData: EventBody[] = payload.record;
   return Response.json(eventData);

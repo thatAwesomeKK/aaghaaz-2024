@@ -15,8 +15,7 @@ export async function GET(
       cache: "no-store",
     }
   ).then((res) => res.json());
-  console.log(payload);
-  
+
   const eventData: EventBody[] = payload.record;
 
   const found = eventData.find((obj) => obj.eventId === parseInt(id));
