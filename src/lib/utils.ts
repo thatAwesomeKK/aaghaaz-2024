@@ -14,7 +14,7 @@ export async function fetchStaleEvent() {
         "X-Master-Key":
           "$2a$10$4dS9mN2/KNRiL2g/atBaTu4Pj6fqIZBFBaIHUcT3Rql33ozttWmSG",
       },
-      next: { revalidate: 1800 },
+      next: { revalidate: 60 },
     }
   ).then((res) => res.json());
   const eventData: EventBody[] = payload.record;
