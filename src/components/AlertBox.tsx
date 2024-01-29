@@ -22,7 +22,7 @@ const AlertBox = ({
   return (
     <AlertDialog>
       <AlertDialogTrigger className="flex justify-end">
-        <Button className="w-[50%] mt-3 shadow-md">Update</Button>
+        <Button disabled={loading} className="w-[50%] mt-3 shadow-md">Update</Button>
       </AlertDialogTrigger>
       <AlertDialogContent>
         <AlertDialogHeader>
