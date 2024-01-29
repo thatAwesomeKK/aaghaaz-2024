@@ -12,6 +12,7 @@ type PageProps = {
 };
 
 const host = process.env.API_IP_ADDRESS;
+export const revalidate = 60
 
 async function Event({ params: { eventId } }: PageProps) {
   const event: EventBody = await fetch(`${host}/api/event/${eventId}`, {
