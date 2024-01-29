@@ -21,6 +21,8 @@ interface Props {
 }
 
 const DragAndDrop = ({ event, id, typeName, name, initialEvents }: Props) => {
+  const [loading, setLoading] = useState(false);
+
   const [coords, setCoords] = useState(
     event?.contact[typeName as keyof Coordinator]
   );
@@ -55,10 +57,12 @@ const DragAndDrop = ({ event, id, typeName, name, initialEvents }: Props) => {
   };
 
   const onSubmit = async () => {
+    setLoading(true);
     const toChange = initialEvents[event.eventId - 1];
     toChange.contact[typeName as keyof Coordinator] = coords;
     initialEvents[event.eventId - 1] = toChange;
     await updateFile(initialEvents);
+    setLoading(false);
   };
 
   return (
@@ -94,7 +98,7 @@ const DragAndDrop = ({ event, id, typeName, name, initialEvents }: Props) => {
                 {provided.placeholder}
                 <div className="flex flex-col">
                   <AddCoordComponent handleCreate={handleCreate} />
-                  <AlertBox handleSubmit={onSubmit} />
+                  <AlertBox handleSubmit={onSubmit} loading={loading}/>
                 </div>
               </div>
             )}

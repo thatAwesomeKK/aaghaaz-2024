@@ -12,7 +12,13 @@ import {
 } from "./ui/alert-dialog";
 import { Button } from "./ui/button";
 
-const AlertBox = ({ handleSubmit }: { handleSubmit: () => void }) => {
+const AlertBox = ({
+  handleSubmit,
+  loading,
+}: {
+  handleSubmit: () => void;
+  loading: boolean;
+}) => {
   return (
     <AlertDialog>
       <AlertDialogTrigger className="flex justify-end">
@@ -22,12 +28,15 @@ const AlertBox = ({ handleSubmit }: { handleSubmit: () => void }) => {
         <AlertDialogHeader>
           <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
           <AlertDialogDescription>
-            This action cannot be undone. This will permanently save changes to database.
+            This action cannot be undone. This will permanently save changes to
+            database.
           </AlertDialogDescription>
         </AlertDialogHeader>
         <AlertDialogFooter>
           <AlertDialogCancel>Cancel</AlertDialogCancel>
-          <AlertDialogAction onClick={handleSubmit}>Continue</AlertDialogAction>
+          <AlertDialogAction disabled={loading} onClick={handleSubmit}>
+            Continue
+          </AlertDialogAction>
         </AlertDialogFooter>
       </AlertDialogContent>
     </AlertDialog>
