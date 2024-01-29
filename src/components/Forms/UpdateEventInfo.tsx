@@ -74,6 +74,7 @@ const UpdateEventInfo = ({ event, initialEvents }: Props) => {
         toChange.img = imageURL || "";
         flag = 1;
       }
+      
       if (toChange.poster !== posterURL) {
         toChange.poster = posterURL || "";
         flag = 1;

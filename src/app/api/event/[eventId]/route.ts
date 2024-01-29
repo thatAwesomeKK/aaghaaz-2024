@@ -9,8 +9,7 @@ export async function GET(
     "https://api.jsonbin.io/v3/b/65b69344dc746540189ce0d0",
     {
       headers: {
-        "X-Master-Key":
-          "$2a$10$4dS9mN2/KNRiL2g/atBaTu4Pj6fqIZBFBaIHUcT3Rql33ozttWmSG",
+        "X-Master-Key": process.env.JSON_BIN_MASTERKEY!,
       },
       cache: "no-store",
     }

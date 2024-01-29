@@ -39,7 +39,6 @@ const SignInForm = () => {
       router.push("/admin");
       setLoading(false);
     } catch (error) {
-      console.log(error);
       setLoading(false);
     }
   }

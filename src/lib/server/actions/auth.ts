@@ -18,7 +18,6 @@ export async function signIn(authKey: string) {
   });
   const info = verifiedToken as jwtInfo;
 
-  console.log(info);
   cookies().set("role", info.role);
   cookies().set("eventId", info.eventId);
 }

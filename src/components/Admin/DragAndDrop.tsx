@@ -171,7 +171,6 @@ const AddCoordComponent = ({
   async function onSubmit(values: z.infer<typeof formSchema>) {
     try {
       setLoading(true);
-      console.log(values);
 
       if (values.number === "") handleCreate({ name: values.name });
       else handleCreate({ name: values.name, number: parseInt(values.number) });

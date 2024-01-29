@@ -8,10 +8,10 @@ export async function GET(request: Request) {
         "X-Master-Key":
           "$2a$10$4dS9mN2/KNRiL2g/atBaTu4Pj6fqIZBFBaIHUcT3Rql33ozttWmSG",
       },
-      cache: "no-store"
+      cache: "no-store",
     }
   ).then((res) => res.json());
-  
+
   const eventData: EventBody[] = payload.record;
   return Response.json(eventData);
 }

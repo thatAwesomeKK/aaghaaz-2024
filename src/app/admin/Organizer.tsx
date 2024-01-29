@@ -3,14 +3,13 @@ import DragAndDropRules from "@/components/Admin/DragAndDropRules";
 import UpdateEventInfo from "@/components/Forms/UpdateEventInfo";
 import React from "react";
 import { EventBody } from "../../../typings";
-import { fetchEvent } from "@/lib/utils";
 
 interface Props {
   event?: EventBody;
+  events: EventBody[];
 }
 
-const Organizer = async ({ event }: Props) => {
-  const events = await fetchEvent();
+const Organizer = async ({ event, events }: Props) => {
   if (!event) return <div></div>;
   return (
     <div className="w-full">
