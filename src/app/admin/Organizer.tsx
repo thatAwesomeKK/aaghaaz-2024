@@ -30,6 +30,13 @@ const Organizer = async ({ event, events }: Props) => {
           initialEvents={events}
         />
         <DragAndDropRules id="rules" event={event} initialEvents={events} />
+        {event.cashPrize && (
+          <DragAndDropRules
+            id="cashPrize"
+            event={event}
+            initialEvents={events}
+          />
+        )}
       </div>
     </div>
   );

@@ -39,15 +39,15 @@ interface Props {
 }
 
 const DragAndDropRules = ({ event, id, initialEvents }: Props) => {
-  const [loading, setLoading] = useState(false)
-  const [rules, setRules] = useState(event.rules);
+  const [loading, setLoading] = useState(false);
+  const [rules, setRules] = useState(event[id as keyof EventBody] as string[]);
 
   const handleOnDragEnd = (result: DropResult) => {
     const { destination, source, type } = result;
 
     if (!destination) return;
 
-    if (type === "rules") {
+    if (type === id) {
       if (source.index === destination.index) return;
 
       const sourceArr = rules;
@@ -71,12 +71,12 @@ const DragAndDropRules = ({ event, id, initialEvents }: Props) => {
   };
 
   const onSubmit = async () => {
-    setLoading(true)
+    setLoading(true);
     const toChange = initialEvents[event.eventId - 1];
     toChange.rules = rules;
     initialEvents[event.eventId - 1] = toChange;
     await updateFile(initialEvents);
-    setLoading(false)
+    setLoading(false);
   };
 
   if (!rules) return <div></div>;
@@ -90,7 +90,7 @@ const DragAndDropRules = ({ event, id, initialEvents }: Props) => {
               {...provided.droppableProps}
               ref={provided.innerRef}
             >
-              <h1 className="text-2xl">Rules</h1>
+              <h1 className="text-2xl capitalize">{id}</h1>
               {rules?.map((rule, i) => (
                 <Draggable draggableId={rule} key={rule} index={i}>
                   {(provided) => (
