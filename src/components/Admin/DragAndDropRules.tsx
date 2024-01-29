@@ -39,6 +39,7 @@ interface Props {
 }
 
 const DragAndDropRules = ({ event, id, initialEvents }: Props) => {
+  const [loading, setLoading] = useState(false)
   const [rules, setRules] = useState(event.rules);
 
   const handleOnDragEnd = (result: DropResult) => {
@@ -70,10 +71,12 @@ const DragAndDropRules = ({ event, id, initialEvents }: Props) => {
   };
 
   const onSubmit = async () => {
+    setLoading(true)
     const toChange = initialEvents[event.eventId - 1];
     toChange.rules = rules;
     initialEvents[event.eventId - 1] = toChange;
     await updateFile(initialEvents);
+    setLoading(false)
   };
 
   if (!rules) return <div></div>;
@@ -105,7 +108,7 @@ const DragAndDropRules = ({ event, id, initialEvents }: Props) => {
               {provided.placeholder}
               <div className="flex flex-col">
                 <AddRuleComponent handleCreate={handleCreate} />
-                <AlertBox handleSubmit={onSubmit} />
+                <AlertBox handleSubmit={onSubmit} loading={loading} />
               </div>
             </div>
           )}
