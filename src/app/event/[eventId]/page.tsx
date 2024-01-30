@@ -118,7 +118,7 @@ async function Event({ params: { eventId } }: PageProps) {
           </div>
         </div>
       </div>
-      <div className="md:flex-wrap hidden h-screen overflow-scroll-y lg:flex justify-center items-center">
+      <div className="md:flex-wrap hidden h-screen overflow-y-scroll lg:flex justify-center items-center">
         <Image src={event?.poster!} alt="poster" height={1080} width={710} />
       </div>
     </div>
