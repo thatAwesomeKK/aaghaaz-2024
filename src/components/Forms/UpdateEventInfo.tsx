@@ -84,8 +84,8 @@ const UpdateEventInfo = ({ event, initialEvents }: Props) => {
         setLoading(false);
         return;
       }
-      initialEvents[event.eventId - 1] = toChange;
-      await updateFile(initialEvents);
+      // initialEvents[event.eventId - 1] = toChange;
+      await updateFile(toChange, event.eventId - 1, "info");
       //   await signIn(values.authKey);
       // alertCall("success", "Signed in successfully!");
       setLoading(false);

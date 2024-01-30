@@ -72,10 +72,10 @@ const DragAndDropRules = ({ event, id, initialEvents }: Props) => {
 
   const onSubmit = async () => {
     setLoading(true);
-    const toChange = initialEvents[event.eventId - 1];
-    id==="rules" ? toChange.rules : toChange.cashPrize = rules;
-    initialEvents[event.eventId - 1] = toChange;
-    await updateFile(initialEvents);
+    // const toChange = initialEvents[event.eventId - 1];
+    // id === "rules" ? toChange.rules : (toChange.cashPrize = rules);
+    // initialEvents[event.eventId - 1] = toChange;
+    await updateFile(rules, event.eventId - 1, id);
     setLoading(false);
   };
 
