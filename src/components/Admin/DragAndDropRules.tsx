@@ -73,7 +73,7 @@ const DragAndDropRules = ({ event, id, initialEvents }: Props) => {
   const onSubmit = async () => {
     setLoading(true);
     const toChange = initialEvents[event.eventId - 1];
-    toChange[id as string] = rules;
+    toChange[id as keyof EventBody] as string[] = rules;
     initialEvents[event.eventId - 1] = toChange;
     await updateFile(initialEvents);
     setLoading(false);
