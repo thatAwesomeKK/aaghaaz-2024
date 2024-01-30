@@ -61,7 +61,7 @@ const DragAndDrop = ({ event, id, typeName, name, initialEvents }: Props) => {
     // const toChange = initialEvents[event.eventId - 1];
     // toChange.contact[typeName as keyof Coordinator] = coords;
     // initialEvents[event.eventId - 1] = toChange;
-    await updateFile(coords, event.eventId, typeName);
+    await updateFile(coords, event.eventId - 1, typeName);
     setLoading(false);
   };
 
