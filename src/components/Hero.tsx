@@ -21,7 +21,7 @@ const Hero = () => {
           <p
             className={`${tilt.className} absolute font-bold text-3xl bg-[#2864b8] z-10 px-2 text-black text-center`}
           >
-            Mega Fest Fusion
+            Mega Fest
           </p>
           <hr className="absolute w-[90vw] md:w-[50vw] lg:w-[30vw] bg-gray-200" />
         </div>
