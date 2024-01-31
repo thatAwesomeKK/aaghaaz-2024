@@ -6,7 +6,7 @@ function Footer() {
     <div className="py-16 ">
       <Link
         className="px-10 py-4 text-xl font-semibold text-white border-gray-100 border-4"
-        href="/assets/Final & Updated Rule Books.pdf"
+        href="/assets/AAGHAAZ RULE BOOK 2K24.pdf"
         download={true}
         target={"_blank"}
       >
