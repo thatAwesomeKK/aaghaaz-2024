@@ -1,11 +1,10 @@
 import React from "react";
 import EventCard from "./EventCard";
-import { EventBody } from "../../typings";
-import { fetchStaleEvent as fetchEvent } from "@/lib/utils";
+import { fetchStaleEvents as fetchEvents } from "@/lib/server/actions/event";
 
 async function Events() {
-  const eventData: EventBody[] = await fetchEvent();
-  
+  const eventData = await fetchEvents();
+
   return (
     <div className="grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10 justify-center max-w-[90%]">
       {eventData?.map((event, i) => (

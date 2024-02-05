@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { Handlee, Pacifico } from "next/font/google";
 import { EventBody } from "../../../../typings";
+import { fetchStaleEvent, fetchStaleEvents } from "@/lib/server/actions/event";
 const handlee = Handlee({ subsets: ["latin"], weight: ["400"] });
 const pacifico = Pacifico({ subsets: ["latin"], weight: ["400"] });
 
@@ -11,12 +12,8 @@ type PageProps = {
   };
 };
 
-const host = process.env.API_IP_ADDRESS;
-
 async function Event({ params: { eventId } }: PageProps) {
-  const event: EventBody = await fetch(`${host}/api/event/${eventId}`, {
-    next: { revalidate: 900 },
-  }).then((res) => res.json());
+  const event = await fetchStaleEvent(eventId);
 
   return (
     <div className="flex bg-[#555] overflow-y-hidden h-screen">
@@ -126,9 +123,7 @@ async function Event({ params: { eventId } }: PageProps) {
 }
 
 export async function generateStaticParams() {
-  const events: EventBody[] = await fetch(`${host}/api/event`).then((res) =>
-    res.json()
-  );
+  const events = await fetchStaleEvents();
 
   return events.map((event) => ({
     id: event.eventId.toString(),

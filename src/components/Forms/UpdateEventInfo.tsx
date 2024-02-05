@@ -28,30 +28,29 @@ const formSchema = z.object({
 });
 
 interface Props {
-  event?: EventBody;
-  initialEvents: EventBody[];
+  initialEvent?: EventBody;
 }
-const UpdateEventInfo = ({ event, initialEvents }: Props) => {
+const UpdateEventInfo = ({ initialEvent }: Props) => {
   const [loading, setLoading] = useState(false);
-  const [imageURL, setImageURL] = useState(event?.img);
-  const [posterURL, setPosterURL] = useState(event?.poster);
+  const [imageURL, setImageURL] = useState(initialEvent?.img);
+  const [posterURL, setPosterURL] = useState(initialEvent?.poster);
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      eventName: event?.eventName,
-      venue: event?.venue,
-      description: event?.description,
-      time: event?.time,
+      eventName: initialEvent?.eventName,
+      venue: initialEvent?.venue,
+      description: initialEvent?.description,
+      time: initialEvent?.time,
     },
   });
   async function onSubmit(values: z.infer<typeof formSchema>) {
     try {
       setLoading(true);
-      if (!event?.eventId) return;
+      if (!initialEvent?.eventId) return;
 
       let flag = 0;
 
-      const toChange = initialEvents[event?.eventId - 1];
+      const toChange: any = {};
 
       if (toChange.eventName !== values.eventName) {
         toChange.eventName = values.eventName;
@@ -74,7 +73,7 @@ const UpdateEventInfo = ({ event, initialEvents }: Props) => {
         toChange.img = imageURL || "";
         flag = 1;
       }
-      
+
       if (toChange.poster !== posterURL) {
         toChange.poster = posterURL || "";
         flag = 1;
@@ -85,7 +84,7 @@ const UpdateEventInfo = ({ event, initialEvents }: Props) => {
         return;
       }
       // initialEvents[event.eventId - 1] = toChange;
-      await updateFile(toChange, event.eventId - 1, "info");
+      await updateFile(toChange, initialEvent.eventId, "info");
       //   await signIn(values.authKey);
       // alertCall("success", "Signed in successfully!");
       setLoading(false);

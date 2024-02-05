@@ -33,14 +33,15 @@ import {
 } from "../ui/form";
 
 interface Props {
-  event: EventBody;
+  initialEvent: EventBody;
   id: string;
-  initialEvents: EventBody[];
 }
 
-const DragAndDropRules = ({ event, id, initialEvents }: Props) => {
+const DragAndDropRules = ({ initialEvent, id }: Props) => {
   const [loading, setLoading] = useState(false);
-  const [rules, setRules] = useState(event[id as keyof EventBody] as string[]);
+  const [rules, setRules] = useState(
+    initialEvent[id as keyof EventBody] as string[]
+  );
 
   const handleOnDragEnd = (result: DropResult) => {
     const { destination, source, type } = result;
@@ -72,10 +73,7 @@ const DragAndDropRules = ({ event, id, initialEvents }: Props) => {
 
   const onSubmit = async () => {
     setLoading(true);
-    // const toChange = initialEvents[event.eventId - 1];
-    // id === "rules" ? toChange.rules : (toChange.cashPrize = rules);
-    // initialEvents[event.eventId - 1] = toChange;
-    await updateFile(rules, event.eventId - 1, id);
+    await updateFile(rules, initialEvent.eventId, id);
     setLoading(false);
   };
 

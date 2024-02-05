@@ -1,6 +1,9 @@
 "use server";
-import { fetchDynamicEvent } from "@/lib/utils";
 import { EventBody } from "../../../../typings";
+import { connectToMongo, disconnectFromMongo } from "../database/dbConfig";
+import { Event } from "../database/model/Event";
+
+const host = process.env.API_IP_ADDRESS;
 
 export async function editEvent(data: Object) {
   try {
@@ -9,38 +12,71 @@ export async function editEvent(data: Object) {
 
 export async function updateFile(data: any, eventId: number, id: string) {
   try {
-    let dbData = await fetchDynamicEvent();
+    let dbData = await fetchDynamicEvents();
 
     if (dbData === data) return console.log("No changes made");
 
-    const toChange = dbData[eventId];
+    await connectToMongo();
     if (id === "rules") {
-      toChange.rules = data;
+      await Event.findOneAndUpdate(
+        { eventId },
+        {
+          $set: {
+            rules: data,
+          },
+        }
+      );
     } else if (id === "cashPrize") {
-      toChange.cashPrize = data;
-    } else if (id === "t_coord") {
-      toChange.contact.t_coord = data;
-    } else if (id === "s_coord") {
-      toChange.contact.s_coord = data;
+      await Event.findOneAndUpdate(
+        { eventId },
+        {
+          $set: {
+            cashPrize: data,
+          },
+        }
+      );
+    } else if (id === "t_coord" || id === "s_coord") {
+      await Event.findOneAndUpdate(
+        { eventId },
+        {
+          $set: {
+            [`contact.${id}`]: data,
+          },
+        }
+      );
     } else if (id === "info") {
-      if (dbData[eventId] !== data) {
-        dbData = await fetchDynamicEvent();
-        dbData[eventId] = data;
-      } else {
-        return console.log("No changes made");
-      }
+      await Event.findOneAndUpdate({ eventId }, data);
     }
-
-    await fetch("https://api.jsonbin.io/v3/b/65b69344dc746540189ce0d0", {
-      method: "PUT",
-      body: JSON.stringify(dbData),
-      headers: {
-        "X-Master-Key":
-          "$2a$10$4dS9mN2/KNRiL2g/atBaTu4Pj6fqIZBFBaIHUcT3Rql33ozttWmSG",
-        "Content-Type": "application/json",
-      },
-    }).then((res) => res.json());
+    await disconnectFromMongo();
   } catch (error) {
     console.log(error);
   }
+}
+
+export async function fetchStaleEvents() {
+  const eventData: EventBody[] = await fetch(`${host}/api/event`, {
+    next: { revalidate: 60 },
+  }).then((res) => res.json());
+  return eventData;
+}
+export async function fetchDynamicEvents() {
+  const eventData: EventBody[] = await fetch(`${host}/api/event`, {
+    cache: "no-store",
+  }).then((res) => res.json());
+  return eventData;
+}
+
+export async function fetchStaleEvent(eventId: string) {
+  const eventData: EventBody = await fetch(`${host}/api/event/${eventId}`, {
+    next: { revalidate: 60 },
+  }).then((res) => res.json());
+  return eventData;
+}
+
+export async function fetchDynamicEvent(eventId: string) {
+  const eventData: EventBody = await fetch(`${host}/api/event/${eventId}`, {
+    cache: "no-store",
+  }).then((res) => res.json());
+
+  return eventData;
 }

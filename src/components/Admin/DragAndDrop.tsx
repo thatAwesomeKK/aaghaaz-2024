@@ -13,18 +13,17 @@ import { Button } from "../ui/button";
 import AlertBox from "../AlertBox";
 
 interface Props {
-  event: EventBody;
+  initialEvent: EventBody;
   id: string;
   typeName: string;
   name?: string;
-  initialEvents: EventBody[];
 }
 
-const DragAndDrop = ({ event, id, typeName, name, initialEvents }: Props) => {
+const DragAndDrop = ({ initialEvent, id, typeName, name }: Props) => {
   const [loading, setLoading] = useState(false);
 
   const [coords, setCoords] = useState(
-    event?.contact[typeName as keyof Coordinator]
+    initialEvent?.contact[typeName as keyof Coordinator]
   );
 
   const handleOnDragEnd = (result: DropResult) => {
@@ -58,10 +57,7 @@ const DragAndDrop = ({ event, id, typeName, name, initialEvents }: Props) => {
 
   const onSubmit = async () => {
     setLoading(true);
-    // const toChange = initialEvents[event.eventId - 1];
-    // toChange.contact[typeName as keyof Coordinator] = coords;
-    // initialEvents[event.eventId - 1] = toChange;
-    await updateFile(coords, event.eventId - 1, typeName);
+    await updateFile(coords, initialEvent.eventId, typeName);
     setLoading(false);
   };
 

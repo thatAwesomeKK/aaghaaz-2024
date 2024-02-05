@@ -1,17 +1,12 @@
-import { EventBody } from "../../../../typings";
+import {
+  connectToMongo,
+  disconnectFromMongo,
+} from "@/lib/server/database/dbConfig";
+import { Event } from "@/lib/server/database/model/Event";
 
 export async function GET(request: Request) {
-  const payload = await fetch(
-    "https://api.jsonbin.io/v3/b/65b69344dc746540189ce0d0",
-    {
-      headers: {
-        "X-Master-Key":
-          "$2a$10$4dS9mN2/KNRiL2g/atBaTu4Pj6fqIZBFBaIHUcT3Rql33ozttWmSG",
-      },
-      cache: "no-store",
-    }
-  ).then((res) => res.json());
-
-  const eventData: EventBody[] = payload.record;
+  await connectToMongo();
+  const eventData = await Event.find({});
+  await disconnectFromMongo();
   return Response.json(eventData);
 }
